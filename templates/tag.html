@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% import "common.html" as common %}
+
+{% block title %}{{ super() }} - Tag {{ tag }}{% endblock %}
+
+{% block content %}
+<header class="tag">
+  <h1>Tag: {{ tag }}</h1>
+</header>
+
+  {%- for post in posts|filter_tag(tag)|reverse %}
+    {{ common.render_post(post) }}
+  {%- endfor %}
+{% endblock %}

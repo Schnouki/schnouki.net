@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% import "common.html" as common %}
+
+{% block title %}{{ super() }} - Archive for {{ months[month] }} {{ year }}{% endblock %}
+
+{% block content %}
+<header class="archive">
+  <h1>Archive for {{ months[month] }} {{ year }}</h1>
+</header>
+
+  {%- for post in posts|filter_month(year, month)|reverse %}
+    {{ common.render_post(post) }}
+  {%- endfor %}
+{% endblock %}

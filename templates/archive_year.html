@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% import "common.html" as common %}
+
+{% block title %}{{ super() }} - Archive for {{ year }}{% endblock %}
+
+{% block content %}
+<article class="archive">
+  <h1>Archive for {{ year }}</h1>
+  <ul>
+  {%- for m, name in months|dictsort(by='key') %}
+    {% if m not in archive[year] %}<li>{{ name }} (0)</li>
+    {%- else %}<li><a href="/archive/{{ year }}/{{ "%02d"|format(m) }}/">{{ name }}</a> ({{ archive[year][m] }})</li>
+    {%- endif %}
+  {%- endfor %}
+  </ul>
+</article>
+{% endblock %}

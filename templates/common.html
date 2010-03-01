@@ -1,0 +1,74 @@
+{% macro archive_box() %}
+<aside class="archive">
+  <h1>Archive</h1>
+{%- for year, months in archive|dictsort(by='key')|reverse %}
+  <h2><a href="/archive/{{ year }}/">{{ year }}</a></h2>
+  {%- for month, num in months|dictsort(by='key') %}
+    <a href="/archive/{{ year }}/{{ "%02d"|format(month) }}/">{{ month_names[month] }}</a> ({{ num }})
+    {%- if not loop.last %}, {%- endif -%}
+  {%- endfor %}
+{%- endfor %}
+</aside>
+{% endmacro %}
+
+{% macro recent_posts_box() %}
+<aside class="recent">
+  <h1>Recent posts</h1>
+  <ul>
+{%- for post in posts[-10:]|reverse %}
+     <li><a href="{{ post.absolute_url }}">{{ post.title }}</a> ({{ post.date|human_readable_date }})</li>
+{%- endfor %}
+  </ul>
+</aside>
+{% endmacro %}
+
+{% macro search_box() %}
+<aside class="search">
+  <h1>Search</h1>
+  <div id="cse" style="width: 100%;">Loading</div>
+  <script src="http://www.google.com/jsapi" type="text/javascript"/>
+  <script type="text/javascript">
+    google.load('search', '1');
+    google.setOnLoadCallback(function(){
+    var customSearchControl = new google.search.CustomSearchControl('009434295289586609789:ura6my-fruq');
+    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+    customSearchControl.draw('cse');
+    }, true);
+  </script>
+  <link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css"/>
+  <style type="text/css">
+    .gsc-control-cse {
+      background-color: #aaa;
+      border: 0;
+    }
+  </style> 
+</aside>
+{% endmacro %}
+
+{% macro tags_box() %}
+<aside class="tags">
+  <h1>Tags</h1>
+{%- for tag, n in tags|dictsort(by='key') -%}
+  {%- set tag_size = 0.8*(1 + ((n - tag_min)/tag_max)) %}
+  <a href="/tag/{{ tag }}/" style="font-size: {{ "%.4f"|format(tag_size) }}em;">{{tag}}</a>
+{%- endfor %}
+</aside>
+{% endmacro %}
+
+{% macro render_post(post) %}
+<article class="post">
+  <header>
+    <h1><a href="{{ post.absolute_url }}">{{ post.title }}</a></h1>
+    <time datetime="{{ post.date.isoformat() }}">{{ post.date|human_readable_date }}</time>
+  </header>
+  <section>
+{{ post.content }}
+  </section>
+  <footer>
+    <a href="{{ post.absolute_url }}#disqus_thread">Comments</a>
+    {%- if post.tags is defined %} - 
+    <span class="tags">tags: {% for tag in post.tags %}{% if not loop.first %}, {% endif %}<a href="/tag/{{ tag }}/">{{ tag }}</a>{% endfor %}</span>
+    {%- endif %}
+  </footer>
+</article>
+{% endmacro %}

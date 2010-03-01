@@ -1,0 +1,142 @@
+/* Reset CSS -- from Blueprint */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section { margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+article, aside, dialog, figure, footer, header, hgroup, nav, section, time { display:block; }
+body { line-height: 1.5; }
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+table, td, th { vertical-align: middle; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+a img { border: none; }
+
+/* Now the real CSS :) */
+body {
+    font-family: Arial, Helvetica, sans;
+    background-color: #222;
+    background-image: url("bg.png");
+    text-align: justify;
+}
+
+/* Common options */
+a, a:visited {
+    color: #448;
+    text-decoration: none;
+}
+a:hover, a:active {
+    color: #66a;
+}
+
+h1 { font-size: 1.6em; font-weight: bold; }
+h2 { font-size: 1.4em; font-weight: bold; }
+h3 { font-size: 1.2em; font-weight: bold; }
+
+p, ul, ol { margin-bottom: .6em; }
+p + ul, p + ol { margin-top: -.6em; }
+p { text-indent: 1.25em; }
+
+ul, ol { padding-left: 2em; }
+
+em { font-style: italic; }
+
+/* Header */
+header.page {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: .5em 1em;
+    text-align: right;
+    background: #111;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    z-index: 1;
+
+}
+
+header.page a {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Footer */
+footer.page {
+    margin: 1em auto;
+    width: 60em;
+}
+
+footer.page div {
+    font-size: .8em;
+    width: 53.75em;
+    padding: .625em 1.25em;
+    border-radius: .3125em;
+    -moz-border-radius: .3125em;
+    -webkit-border-radius: .3125em;
+    background: #333;
+    color: #777;
+}
+
+/* Wrapper - 2 columns */
+#wrapper {
+    margin: 5em auto 0 auto;
+    width: 60em;
+}
+
+/* Sidebar */
+aside {
+    float: right;
+    clear: right;
+    font-size: .9em;
+    width: 14.4444em;
+    margin-bottom: 1.1111em;
+    padding: .55555em;
+    background: #aaa;
+    border-radius: .27777em;
+    -moz-border-radius: .27777em;
+    -webkit-border-radius: .27777em;
+}
+aside h1 { font-size: 1.1em; text-align: center; }
+aside h2 { font-size: 1em; }
+aside ul, aside ol { padding-left: 1.25em; }
+
+/* Main content */
+.content {
+    width: 45em;
+}
+
+article, header.archive, header.tag {
+    margin-top: 1em;
+    padding: .5em 1em;
+    background: #eee;
+    border-radius: .25em;
+    -moz-border-radius: .25em;
+    -webkit-border-radius: .25em;
+}
+
+/* Post */
+.post header {
+    color: #888;
+    margin-bottom: 1em;
+}
+.post header time {
+    text-align: right;
+    font-style: italic;
+    font-size: .9em;
+}
+
+.post footer {
+    color: #888;
+    margin-top: 1.25em;
+    text-align: right;
+    font-style: italic;
+    font-size: .8em;
+}
+
+.post section h1, .post section h2, .post section h3 {
+    margin-top: .8em;
+}
+
+.post blockquote {
+    padding-left: 1.5em;
+    border-left: 1px solid #888;
+}

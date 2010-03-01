@@ -1,0 +1,52 @@
+{% import "common.html" as common %}
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{% block title %}{{ site.title }}{% endblock %}</title>
+
+    <link rel="stylesheet" href="/static/style.css"/>
+
+    <link rel="start" href="{{ site.url }}/" title="Home"/>
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries"  href="/feed.atom"/>
+
+    <link rel="openid.server" href="http://www.myopenid.com/server"/>
+    <link rel="openid.delegate" href="http://schnouki.myopenid.com/"/>
+    <link rel="openid2.local_id" href="http://schnouki.myopenid.com"/>
+    <link rel="openid2.provider" href="http://www.myopenid.com/server"/>
+
+    <!-- IE HTML5 workaround -- from http://metajack.im/ -->
+    <script type="text/javascript">
+    <script>//<![CDATA[
+         function fixElem(name) { document.createElement(name); }
+         fixElem('header'); fixElem('aside'); fixElem('section'); fixElem('article'); fixElem('time'); fixElem('footer');
+      //]]></script>
+  </head>
+
+  <body>
+    <header class="page"><a href="/">{{ site.title }}</a></header>
+    <div id="wrapper">
+      {{ common.recent_posts_box() -}}
+      {{ common.search_box() -}}
+      {{ common.tags_box() -}}
+      {{ common.archive_box() -}}
+      <section class="content">
+        {% block content %}
+        {% endblock content %}
+      </section>
+    </div>
+    <footer class="page"><div>&copy; {{ site.copyright_period }} {{ site.author }}</div></footer>
+    <script type="text/javascript">//<![CDATA[
+      (function() {
+        var links = document.getElementsByTagName('a');
+        var query = '?';
+        for(var i = 0; i < links.length; i++) {
+          if (links[i].href.indexOf('#disqus_thread') >= 0) {
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+          }
+        }
+        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/devschnouki/get_num_replies.js' + query + '"></' + 'script>');
+      })();
+    //]]></script>
+  </body>
+</html>

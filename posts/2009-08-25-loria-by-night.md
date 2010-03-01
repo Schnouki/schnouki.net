@@ -1,0 +1,16 @@
+﻿title: LORIA by night
+date: 2009-08-25
+tags: [LORIA, night]
+---
+
+![Hall](/data/loria/night1.jpg "Hall")
+
+![Hall (direction : la machine à café !)](/data/loria/night2.jpg "Hall, direction : la machine à café !")
+
+![Le bâtiment vu de l'extérieur](/data/loria/night3.jpg "Le bâtiment vu de l'extérieur")
+
+LORIA by night... C'est la première fois que je reste aussi tard au labo, et
+c'est assez sympa la nuit. Et c'est fun parce que même en partant à 21h, je
+n'étais pas le dernier dans le bâtiment :-)
+
+Bon, c'est pas tout ça, mais il me reste un rapport de stage à finir...

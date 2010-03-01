@@ -1,0 +1,8 @@
+title: Sigur Rós - Vaka
+date: 2009-10-23
+tags: [Sigur Rós, music]
+---
+
+<embed style="width:500px; height:407px;" id="VideoPlayback" type="application/x-shockwave-flash" src="http://video.google.com/googleplayer.swf?docId=7586880205583288243" flashvars="" />
+
+Sigur Rós's "Untitled #1 (vaka)" directed by Floria Sigismondi. [Hear all of Sigur Rós's albums on gogoyoko](http://www.gogoyoko.com/artist/sigurros).
