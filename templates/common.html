@@ -16,7 +16,7 @@
   <h1>Recent posts</h1>
   <ul>
 {%- for post in posts[-10:]|reverse %}
-     <li><a href="{{ post.absolute_url }}">{{ post.title }}</a> ({{ post.date|human_readable_date }})</li>
+     <li><a href="{{ post.absolute_url }}">{{ post.title }}</a> ({{ post.date|short_date }})</li>
 {%- endfor %}
   </ul>
 </aside>
