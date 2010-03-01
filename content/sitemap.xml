@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>{{ site.update_date|rfc3339 }}</lastmod>
+    <priority>1.0</priority>
+  </url>
+{%- for post in posts[-20:]|reverse %}
+  <url>
+    <loc>{{ post.absolute_url }}</loc>
+    <lastmod>{{ post.date|rfc3339 }}</lastmod>
+    <priority>{{ 1.0 - (loop.index/20) }}</priority>
+  </url>
+{%- endfor %}
+</urlset> 
