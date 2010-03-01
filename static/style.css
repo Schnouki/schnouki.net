@@ -112,6 +112,23 @@ article, header.archive, header.tag {
     -moz-border-radius: .25em;
     -webkit-border-radius: .25em;
 }
+.navigation {
+    width: 44em;
+    //margin: 0;
+    padding: .25em .5em;
+    border-radius: .25em;
+    -moz-border-radius: .25em;
+    -webkit-border-radius: .25em;
+    background: #aaa;
+    display: table;
+}
+.navigation span { display: table-cell; }
+.navigation .prev {
+    text-align: left;
+}
+.navigation .next {
+    text-align: right;
+}
 
 /* Post */
 .post header {
