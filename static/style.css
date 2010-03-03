@@ -114,7 +114,6 @@ article, header.archive, header.tag {
 }
 .navigation {
     width: 44em;
-    //margin: 0;
     padding: .25em .5em;
     border-radius: .25em;
     -moz-border-radius: .25em;
