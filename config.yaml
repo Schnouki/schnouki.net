@@ -1,6 +1,6 @@
 title: /dev/schnouki
 author: Thomas Jost
-url: http://dev.schnouki.net
+url: http://schnouki.net
 default_post_template: post.html
 archive_month_template: archive_month.html
 archive_year_template: archive_year.html
