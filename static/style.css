@@ -103,6 +103,8 @@ aside h1 { font-size: 1.1em; text-align: center; }
 aside h2 { font-size: 1em; }
 aside ul, aside ol { padding-left: 1.25em; }
 
+aside.buttons { text-align: center; }
+
 /* Main content */
 .content {
     width: 45em;
