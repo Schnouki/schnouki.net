@@ -15,15 +15,27 @@
     <link rel="openid2.local_id" href="http://schnouki.myopenid.com"/>
     <link rel="openid2.provider" href="http://www.myopenid.com/server"/>
 
+    <!-- Die, IE6, die! -- from http://code.google.com/p/sevenup/ -->
+    <script type="text/javascript" src="/static/sevenup.0.3.min.js"></script>
+    <script type="text/javascript" src="/static/sevenup_black.0.3.min.js"></script>
+    <script type="text/javascript">//<![CDATA[
+      var sevenUpOptions = {
+        enableClosing: false,
+        enableQuitBuggingMe: false,
+        downloadLink: "http://getfirefox.com",
+        showToAllBrowsers: false
+      };
+      //]]</script>
+
     <!-- IE HTML5 workaround -- from http://metajack.im/ -->
     <script type="text/javascript">
     <script>//<![CDATA[
-         function fixElem(name) { document.createElement(name); }
-         fixElem('header'); fixElem('aside'); fixElem('section'); fixElem('article'); fixElem('time'); fixElem('footer');
+      function fixElem(name) { document.createElement(name); }
+      fixElem('header'); fixElem('aside'); fixElem('section'); fixElem('article'); fixElem('time'); fixElem('footer');
       //]]></script>
   </head>
 
-  <body>
+  <body onload="sevenUp.plugin.black.test(sevenUpOptions, null);">
     <header class="page"><a href="/">{{ site.title }}</a></header>
     <div id="wrapper">
       {{ common.recent_posts_box() -}}
