@@ -19,11 +19,11 @@ body {
 
 /* Common options */
 a, a:visited {
-    color: #448;
+    color: #006;
     text-decoration: none;
 }
 a:hover, a:active {
-    color: #66a;
+    color: #228;
 }
 
 h1 { font-size: 1.6em; font-weight: bold; }
@@ -58,6 +58,8 @@ header.page a {
     font-size: 2em;
     font-weight: bold;
 }
+header.page a, header.page a:visited { color: #aac; }
+header.page a:hover, header.page a:active { color: #cce; }
 
 /* Wrapper - 2 columns */
 #wrapper {
