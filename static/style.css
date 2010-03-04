@@ -73,8 +73,12 @@ footer.page div {
     -moz-border-radius: .3125em;
     -webkit-border-radius: .3125em;
     background: #333;
-    color: #777;
+    color: #888;
+    text-align: center;
 }
+
+footer.page a, footer.page a:visited { color: #aaa; }
+footer.page a:hover, footer.page a:active { color: #ddd; }
 
 /* Wrapper - 2 columns */
 #wrapper {
