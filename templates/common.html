@@ -34,23 +34,15 @@
 {% macro search_box() %}
 <aside class="search">
   <h1>Search</h1>
-  <div id="cse" style="width: 100%;">Loading</div>
-  <script src="http://www.google.com/jsapi" type="text/javascript"></script>
-  <script type="text/javascript">
-    google.load('search', '1');
-    google.setOnLoadCallback(function(){
-    var customSearchControl = new google.search.CustomSearchControl('009434295289586609789:ura6my-fruq');
-    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
-    customSearchControl.draw('cse');
-    }, true);
-  </script>
-  <link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css"/>
-  <style type="text/css">
-    .gsc-control-cse {
-      background-color: #aaa;
-      border: 0;
-    }
-  </style> 
+  <form action="http://www.google.com/cse" id="cse-search-box">
+    <div>
+      <input type="hidden" name="cx" value="009434295289586609789:ura6my-fruq" />
+      <input type="hidden" name="ie" value="UTF-8" />
+      <input type="text" name="q" style="width: 100%;" />
+      <input type="submit" name="sa" value="Search" />
+    </div>
+  </form>
+  <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
 </aside>
 {% endmacro %}
 
