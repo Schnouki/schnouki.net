@@ -167,3 +167,12 @@ footer.page a:hover, footer.page a:active { color: #ddd; }
     padding-left: 1.5em;
     border-left: 1px solid #888;
 }
+
+.post pre, .post tt, .post code { font-family: monospace; }
+.post pre {
+    display: block;
+    white-space: pre-wrap;
+    background: #ddd;
+    padding: .25em .5em;
+    overflow: auto;
+}
