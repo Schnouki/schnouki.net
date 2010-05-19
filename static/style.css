@@ -75,7 +75,7 @@ header.page a:hover, header.page a:active { color: #cce; }
     margin: 0;
     vertical-align: top;
 }
-aside {
+.sideblock {
     font-size: .9em;
     width: 14.4444em;
     margin-top: 1.1111em;
@@ -86,11 +86,11 @@ aside {
     -moz-border-radius: .27777em;
     -webkit-border-radius: .27777em;
 }
-aside h1 { font-size: 1.1em; text-align: center; }
-aside h2 { font-size: 1em; }
-aside ul, aside ol { padding-left: 1.25em; }
+.sideblock h1 { font-size: 1.1em; text-align: center; }
+.sideblock h2 { font-size: 1em; }
+.sideblock ul, .sideblock ol { padding-left: 1.25em; }
 
-aside.buttons { text-align: center; }
+.sideblock.buttons { text-align: center; }
 
 /* Main content */
 .content {
