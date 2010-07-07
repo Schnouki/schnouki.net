@@ -17,6 +17,8 @@
   <a href="https://fellowship.fsfe.org/login/join.php?ref=schnouki"><img src="/data/buttons/fsfe_fellow-badge-80x15.png" alt="Join the Fellowship and support Free Software!"/></a>
   <a href="http://playogg.org/"><img src="/data/buttons/Play_ogg_80x15.png" alt="Play Ogg"/></a>
   <a href="http://www.gnu.org/software/emacs/"><img src="/data/buttons/emacs.png" alt="Made with GNU Emacs"/></a>
+  <script type="text/javascript">var flattr_url = 'http://schnouki.net'; var flattr_btn='compact';</script>
+  <script src="http://api.flattr.com/button/load.js" type="text/javascript"></script>
 </div>
 {% endmacro %}
 
@@ -53,6 +55,20 @@
   {%- set tag_size = 0.8*(1 + ((n - tag_min)/tag_max)) %}
   <a href="/tag/{{ tag }}/" style="font-size: {{ "%.4f"|format(tag_size) }}em;">{{tag}}</a>
 {%- endfor %}
+</div>
+{% endmacro %}
+
+{% macro whoami_box() %}
+<div class="sideblock whoami">
+  <h1>About this blog</h1>
+  <p>Hello and welcome here! I'm Thomas Jost, aka "Schnouki". I'm a PhD student
+  in computer science and I love Free Software, GNU/Linux, science-fiction, good
+  TV series, and lots of other things.</p>
+  <p>You can contact me here by commenting on a post, or
+  by <a href="mailto:schnouki@schnouki.net">e-mail</a>, or
+  by <a href="mailto:schnouki@pouet.im">Jabber/XMPP</a>. If you feel as paranoid
+  as I do, be sure to use my <a href="/publickey.asc">GnuPG key</a> (ID:
+  D3E5DF54).</p>
 </div>
 {% endmacro %}
 
