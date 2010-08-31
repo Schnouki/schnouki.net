@@ -9,7 +9,7 @@
   <link href="{{ site.url }}/" rel="alternate"/>
   <link href="{{ absolute_url }}" rel="self"/>
   <generator>Golbarg</generator>
-{% for post in posts|filter_tag(tag)|reverse %}
+{% for post in posts|reverse %}
   <entry>
     <id>{{ post.absolute_url }}</id>
     <title type="html">{{ post.title|e }}</title>

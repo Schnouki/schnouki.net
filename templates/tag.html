@@ -9,7 +9,7 @@
   <h1>Tag: {{ tag }}</h1>
 </header>
 
-  {%- for post in posts|filter_tag(tag)|reverse %}
+  {%- for post in posts|reverse %}
     {{ common.render_post(post) }}
   {%- endfor %}
 {% endblock %}
