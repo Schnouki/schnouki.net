@@ -2,6 +2,7 @@
 {% import "common.html" as common %}
 
 {% block title %}{{ super() }} - Tag {{ tag }}{% endblock %}
+{% block feeds %}<link rel="alternate" type="application/atom+xml" title="Recent Entries tagged with {{ tag }}"  href="/tag/{{ tag }}/feed.atom"/>{% endblock %}
 
 {% block content %}
 <header class="tag">
