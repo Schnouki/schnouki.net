@@ -1,7 +1,9 @@
 title: /dev/schnouki
 author: Thomas Jost
 url: http://schnouki.net
+language: en_GB
 default_post_template: post.html
 archive_month_template: archive_month.html
 archive_year_template: archive_year.html
-tag_template: tag.html
+tag_template: { index.html: tag.html, feed.atom: tag.atom }
+hidden_tags: [ fs_en, fs_fr ]

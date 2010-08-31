@@ -1,6 +1,6 @@
 {% import "common.html" as common %}
 <?xml version="1.0" encoding="UTF-8"?>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ site.language|replace("_", "-") }}">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>{% block title %}{{ site.title }}{% endblock %}</title>
@@ -9,6 +9,7 @@
 
     <link rel="start" href="{{ site.url }}/" title="Home"/>
     <link rel="alternate" type="application/atom+xml" title="Recent Entries"  href="/feed.atom"/>
+    {% block feeds %}{% endblock feeds %}
 
     <link rel="openid.server" href="http://www.myopenid.com/server"/>
     <link rel="openid.delegate" href="http://schnouki.myopenid.com/"/>
@@ -26,6 +27,21 @@
         showToAllBrowsers: false
       };
       //]]></script>
+
+    <!-- Flattr me! -->
+    <script type="text/javascript">
+      <!--//--><![CDATA[//><!--            
+            (function() {
+                var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+                
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'http://api.flattr.com/js/0.5.0/load.js?uid=21872';
+                
+                t.parentNode.insertBefore(s, t);
+            })();    
+        //--><!]]>
+    </script>
 
     <!-- IE HTML5 workaround - from http://metajack.im/ -->
     <script type="text/javascript">//<![CDATA[
@@ -47,10 +63,11 @@
         </footer>
       </div>
       <div class="sidebar">
+        {{ common.whoami_box() -}}
+        {{ common.buttons_box() -}}
         {{ common.recent_posts_box() -}}
         {{ common.acta_box() -}}
         {{ common.search_box() -}}
-        {{ common.buttons_box() -}}
         {{ common.tags_box() -}}
         {{ common.archive_box() -}}
       </div>
@@ -66,6 +83,9 @@
         }
         document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/devschnouki/get_num_replies.js' + query + '"></' + 'script>');
       })();
+    //]]></script>
+    <script type="text/javascript">//<![CDATA[
+      FlattrLoader.setup();
     //]]></script>
   </body>
 </html>
