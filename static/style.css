@@ -3,7 +3,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 article, aside, dialog, figure, footer, header, hgroup, nav, section, time { display:block; }
 body { line-height: 1.5; }
 table { border-collapse: separate; border-spacing: 0; }
-caption, th, td { text-align: left; font-weight: normal; }
+caption, th, td { font-weight: normal; }
 table, td, th { vertical-align: middle; }
 blockquote:before, blockquote:after, q:before, q:after { content: ""; }
 blockquote, q { quotes: "" ""; }
@@ -176,4 +176,22 @@ footer.page a:hover, footer.page a:active { color: #ddd; }
     background: #ddd;
     padding: .25em .5em;
     overflow: auto;
+}
+
+.post table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background: #eef;
+    margin: auto;
+    font-size: .95em;
+}
+.post table thead {
+    border-bottom: 1px solid black;
+}
+.post table th {
+    background: #dde;
+    font-weight: bold;
+}
+.post table td, .post table th {
+    padding: .1em .75em;
 }
