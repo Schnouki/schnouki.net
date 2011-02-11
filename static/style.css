@@ -32,7 +32,7 @@ h3 { font-size: 1.2em; font-weight: bold; }
 
 p, ul, ol { margin-bottom: .6em; }
 p + ul, p + ol { margin-top: -.6em; }
-p { text-indent: 1.25em; }
+p { text-indent: 2em; }
 
 ul, ol { padding-left: 2em; }
 
@@ -110,7 +110,9 @@ article, header.archive, header.tag {
 }
 .navigation {
     margin-top: 1em;
-    width: 44em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45em;
     padding: .25em .5em;
     border-radius: .25em;
     -moz-border-radius: .25em;
