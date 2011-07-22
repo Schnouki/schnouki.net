@@ -33,6 +33,7 @@ h3 { font-size: 1.2em; font-weight: bold; }
 p, ul, ol { margin-bottom: .6em; }
 p + ul, p + ol { margin-top: -.6em; }
 p { text-indent: 2em; }
+li p { text-indent: 0; }
 
 ul, ol { padding-left: 2em; }
 
