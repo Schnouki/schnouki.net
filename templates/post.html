@@ -6,10 +6,10 @@
 {% block content -%}
 <div class="navigation">
   {%- if prev_post is defined %}
-  <span class="prev"><a href="{{ prev_post.absolute_url }}">&laquo; {{ prev_post.title }}</a></span>
+  <span class="prev"><a href="{{ prev_post.url }}">&laquo; {{ prev_post.title }}</a></span>
   {%- endif %}
   {%- if next_post is defined %}
-  <span class="next"><a href="{{ next_post.absolute_url }}">{{ next_post.title }} &raquo;</a></span>
+  <span class="next"><a href="{{ next_post.url }}">{{ next_post.title }} &raquo;</a></span>
   {%- endif %}
 </div>
 
