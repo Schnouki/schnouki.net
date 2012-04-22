@@ -70,7 +70,7 @@
   by <a href="mailto:schnouki@schnouki.net">e-mail</a>, or
   by <a href="mailto:schnouki@pouet.im">Jabber/XMPP</a>. If you feel as paranoid
   as I do, be sure to use my <a href="/publickey.asc">GnuPG key</a> (ID:
-  D3E5DF54).</p>
+  C0478597).</p>
 </div>
 {% endmacro %}
 
@@ -85,9 +85,9 @@
   </section>
   <footer>
     <a href="{{ post.absolute_url }}#disqus_thread">Comments</a>
-    {%- if post.tags is defined %} - 
+    {%- if post.tags is defined %} -
     <span class="tags">tags: {% for tag in post.tags %}{% if not loop.first %}, {% endif %}<a href="/tag/{{ tag }}/">{{ tag }}</a>{% endfor %}</span>
-    {%- endif %} - 
+    {%- endif %} -
     <span class="flattr">
     <a class="FlattrButton" style="display:none;" href="{{ post.absolute_url }}" title="{{ post.title|e }}"
        lang="{{ post.language }}" rev="flattr;button:compact;category:{{ post.flattr_cat|default("text") }};tags:schnouki,blog{% for tag in post.tags %},{{ tag }}{% endfor %}">{{ post.content|striptags|shorten(200) }}</a>
