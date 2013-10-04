@@ -19,7 +19,7 @@
   {% endif %}
   </ul>
 
-<h4>Categories</h4>
+<h4 class="nolink"><a href="{{ SITEURL }}/categories.html">Categories</a></h4>
 {% if categories %}
 <ul>
 	{% for cat, null in categories %}
@@ -29,14 +29,7 @@
 {% endif %}
 
 
-<h4>Tags</h4>
-{% if tags %}
-	<ul>
-	{% for tag in tag_cloud %}
-	    <li class="tag-{{ tag.1 }}"><a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0|e }}</a></li>
-	{% endfor %}
-</ul>
-{% endif %}
+<h4 class="nolink"><a href="{{ SITEURL }}/tags.html">Tags</a></h4>
 
 
 {% if SOCIAL %}

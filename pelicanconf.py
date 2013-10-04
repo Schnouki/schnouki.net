@@ -28,23 +28,29 @@ STATIC_PATHS = ['images', 'videos']
 ARTICLE_URL = 'posts/{date:%Y}/{date:%02m}/{date:%02d}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%02m}/{date:%02d}/{slug}/index.html'
 
-
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+# LINKS =  (('Pelican', 'http://getpelican.com/'),
+#           ('Python.org', 'http://python.org/'),
+#           ('Jinja2', 'http://jinja.pocoo.org/'),
+#           ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Twitter', 'http://twitter.com/Schnouki'),
-          ('GitHub', 'http://github.com/Schnouki'),)
-TWITTER_USERNAME = "Schnouki"
+GITHUB_URL = "http://github.com/Schnouki"
+GOOGLEPLUS_URL = "https://plus.google.com/114147327713811044331"
+TWITTER_URL = "http://twitter.com/Schnouki"
+SOCIAL = (('GitHub',  GITHUB_URL),
+          ('Twitter', TWITTER_URL),
+          ('Google+', GOOGLEPLUS_URL),)
 
 # Pagination
 DEFAULT_PAGINATION = 5
 
 # Theme
-THEME="themes/gum"
+THEME = "themes/gum"
 
 # Comments
 DISQUS_SITENAME = "devschnouki"
+
+# Tags
+TAG_CLOUD_STEPS = 4
+TAG_CLOUD_MAX_ITEMS = 100
