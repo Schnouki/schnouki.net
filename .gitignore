@@ -1,4 +1,3 @@
-.golbarg-build
-.golbarg-upload
-Makefile
-site
+__pycache__/
+output/
+*.pid
