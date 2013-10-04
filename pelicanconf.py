@@ -22,7 +22,7 @@ TRANSLATION_FEED_ATOM = None
 FEED_MAX_ITEMS = 10
 
 # Paths
-STATIC_PATHS = ['images', 'videos']
+STATIC_PATHS = ['files', 'images', 'videos']
 
 # URLs
 ARTICLE_URL = 'posts/{date:%Y}/{date:%02m}/{date:%02d}/{slug}/'
@@ -38,9 +38,11 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%02m}/{date:%02d}/{slug}/index.html'
 GITHUB_URL = "http://github.com/Schnouki"
 GOOGLEPLUS_URL = "https://plus.google.com/114147327713811044331"
 TWITTER_URL = "http://twitter.com/Schnouki"
-SOCIAL = (('GitHub',  GITHUB_URL),
-          ('Twitter', TWITTER_URL),
-          ('Google+', GOOGLEPLUS_URL),)
+SOCIAL = (('GitHub',        GITHUB_URL),
+          ('Twitter',       TWITTER_URL),
+          ('Google+',       GOOGLEPLUS_URL),
+          ('LinkedIn',      "http://fr.linkedin.com/in/thomasjost/"),
+          ('StackOverflow', "http://stackoverflow.com/users/113325/schnouki"),)
 
 # Pagination
 DEFAULT_PAGINATION = 5

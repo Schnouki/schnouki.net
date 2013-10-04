@@ -15,7 +15,7 @@ FTP_TARGET_DIR=/
 SSH_HOST=ks
 SSH_PORT=22
 SSH_USER=schnouki
-SSH_TARGET_DIR=/srv/www/schnouki.net/htdocs
+SSH_TARGET_DIR=/srv/http/schnouki.net/htdocs
 
 S3_BUCKET=my_s3_bucket
 
