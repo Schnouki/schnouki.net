@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Thomas Jost'
 SITENAME = '/dev/schnouki'
-SITEURL = 'http://schnouki.net'
+SITEURL = ''
 
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
@@ -12,12 +12,12 @@ DEFAULT_LANG = 'en'
 SUMMARY_MAX_LENGTH = None
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = "feed.atom"
-CATEGORY_FEED_ATOM = "feed.cat-%s.atom"
-TAG_FEED_ATOM = "feed.tag-%s.atom"
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TAG_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 FEED_MAX_ITEMS = 10
 
