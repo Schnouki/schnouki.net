@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
@@ -38,11 +37,11 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%02m}/{date:%02d}/{slug}/index.html'
 GITHUB_URL = "http://github.com/Schnouki"
 GOOGLEPLUS_URL = "https://plus.google.com/114147327713811044331"
 TWITTER_URL = "http://twitter.com/Schnouki"
-SOCIAL = (('GitHub',        GITHUB_URL),
-          ('Twitter',       TWITTER_URL),
+SOCIAL = (('Twitter',       TWITTER_URL),
           ('Google+',       GOOGLEPLUS_URL),
-          ('LinkedIn',      "http://fr.linkedin.com/in/thomasjost/"),
-          ('StackOverflow', "http://stackoverflow.com/users/113325/schnouki"),)
+          ('GitHub',        GITHUB_URL),
+          ('StackOverflow', "http://stackoverflow.com/users/113325/schnouki"),
+          ('LinkedIn',      "http://fr.linkedin.com/in/thomasjost/"),)
 
 # Pagination
 DEFAULT_PAGINATION = 5

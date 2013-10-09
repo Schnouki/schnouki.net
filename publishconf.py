@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
@@ -10,7 +9,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://schnouki.net'
+SITEURL = '//schnouki.net'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = "feed.atom"
