@@ -55,3 +55,8 @@ DISQUS_SITENAME = "devschnouki"
 # Tags
 TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 100
+
+# Plugins
+PLUGIN_PATH = 'plugins'
+PLUGINS = ['sitemap', 'summary']
+SITEMAP = {"format": "xml"}
