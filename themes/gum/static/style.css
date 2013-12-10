@@ -82,13 +82,13 @@ td[align=right] {
   text-align: right;
 }
 
-article table {
+.entry-content table {
   width: 100%;
   margin-bottom: 20px;
 }
 
-article table th,
-article table td {
+.entry-content table th,
+.entry-content table td {
   padding: 8px;
   line-height: 20px;
   text-align: left;
@@ -96,29 +96,29 @@ article table td {
   border-top: 1px solid #dddddd;
 }
 
-article table th {
+.entry-content table th {
   font-weight: bold;
   text-align: center;
 }
 
-article table thead th {
+.entry-content table thead th {
   vertical-align: bottom;
 }
 
-article table caption + thead tr:first-child th,
-article table caption + thead tr:first-child td,
-article table colgroup + thead tr:first-child th,
-article table colgroup + thead tr:first-child td,
-article table thead:first-child tr:first-child th,
-article table thead:first-child tr:first-child td {
+.entry-content table caption + thead tr:first-child th,
+.entry-content table caption + thead tr:first-child td,
+.entry-content table colgroup + thead tr:first-child th,
+.entry-content table colgroup + thead tr:first-child td,
+.entry-content table thead:first-child tr:first-child th,
+.entry-content table thead:first-child tr:first-child td {
   border-top: 0;
 }
 
-article table tbody + tbody {
+.entry-content table tbody + tbody {
   border-top: 2px solid #dddddd;
 }
 
-article table .table {
+.entry-content table .table {
   background-color: #ffffff;
 }
 
@@ -177,7 +177,16 @@ table th[class*="span"],
 
 address { font-size:14px; margin-bottom:10px;}
 
-article ul li { list-style: inside; }
+.entry-content ul {
+    list-style: outside disc;
+    padding-left: 1.2em;
+}
+
+.entry-content a.footnote-ref {
+    vertical-align: super;
+    font-size: .7em;
+    line-height: 0;
+}
 
 
 /* Typography
