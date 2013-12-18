@@ -7,6 +7,7 @@ SITEURL = ''
 
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
+LOCALE = 'en_US'
 
 SUMMARY_MAX_LENGTH = None
 
