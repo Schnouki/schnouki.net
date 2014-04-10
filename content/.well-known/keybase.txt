@@ -1,0 +1,64 @@
+==================================================================
+https://keybase.io/schnouki
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://schnouki.net
+  * I am schnouki (https://keybase.io/schnouki) on keybase.
+  * I have a public key with fingerprint 0E06 6C82 4146 7232 6FB0  61CB 3E0B 0C49 C047 8597
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "0e066c82414672326fb061cb3e0b0c49c0478597",
+            "host": "keybase.io",
+            "key_id": "3E0B0C49C0478597",
+            "uid": "d7ea0f14c4d0cf3ee6728bc4db74bc00",
+            "username": "schnouki"
+        },
+        "service": {
+            "hostname": "schnouki.net",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1397124627,
+    "expire_in": 157680000,
+    "prev": "ce5efdefe8861c2e903602199ae9634b911b9e1e3d7e0fac234b63f0cf881e8d",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2.0.22 (GNU/Linux)
+
+owFdUVtIFFEYnl3LLrImRbJEap0eKjQ7c9m52YO5mA8iPQhuiLHszJxZR21m3Z3d
+Mt2HQrPLg3bB8sEiwlVawaQyJGKLSArJQi30QTQRvKQQlvSQYGekCDovh//7v//7
+znf+VkcSYbfNpr8Z6F2drrUNvVyRiNIT+q56IBlKHRDrQTXauFRN96NgIKjpJhAB
+RJBlZZ5iSIblKJpiVQmypCzRCEpQZgQZMhzvEjiQAyqNkDWBZSRfCOVqBsZw4dUU
+jNKFsAC6GcH9jx/eaCgc8kGVZGRGgbJKI4RteAlXEsdIMoQWMYSCuu8MwuyQXKkb
+4WoNRHMARiOajKw3W9b/MXJ1ZOLZQNAwDdmowZ1K0wyERGvSrAtY1LNI8v4R8Uqa
+ruDgeCKCgiHN0IFIYqZsapYqSQscSTEsxeUAdC6gBZFXsxgujuUhPpYPimBJGbmQ
+qiAV8Tz+JQoJkGYhRQqCDwkszUgCSUoCIhGNY0PVJ1MYY2kVJ+d5EvEKsGLV6gYQ
+sZPp81uBNL/uM8NBBKJXbHs3ETY7kbzZbq2O2L4t7e9CW5Ut66eeLsm3slMv3F2u
+KPOMqaMtCwf6yyZ/Vs29ujqclN+QGd/PqRkzTTNvHxUpzrWOtpHmlO/PlXfFS++F
+kvu7452OZ10Dl9ddeeWfSged144eSXyOR8cb9gzlZpznbIn0xJMbzsjWcLuaeqz7
++MVuMcW/PjXVed3h/3b45tc+j7jyIsYXEgt+NbOxbVQcLmmZ63o8wDyIFcc/XPpS
+19w6meU5mJipqWrys4cWe4hVRySlqNG9o7BAbY/ls/180VhFZKH3R1rV0GAtaJrI
+znSefrh4e60n1oHuvT65s6H8V3rW+I5Zl+ejdx/RtVywNjK/4o7a+6KuaTNvIvnO
+/G8=
+=xb3B
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/schnouki
+
+==================================================================

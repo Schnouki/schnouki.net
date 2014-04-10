@@ -23,7 +23,7 @@ TRANSLATION_FEED_ATOM = None
 FEED_MAX_ITEMS = 10
 
 # Paths
-STATIC_PATHS = ['files', 'images', 'videos']
+STATIC_PATHS = ['files', 'images', 'videos', '.well-known']
 
 # URLs
 ARTICLE_URL = 'posts/{date:%Y}/{date:%02m}/{date:%02d}/{slug}/'
