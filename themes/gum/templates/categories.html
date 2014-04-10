@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
+<h1>Categories</h1>
+
 <ul>
 {% for category, articles in categories %}
-    <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a></li>
+    <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a>: {{ articles|length }} articles </li>
 {% endfor %}
 </ul>
 {% endblock %}
