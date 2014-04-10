@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Thomas Jost'
 SITENAME = '/dev/schnouki'
 SITEURL = ''
+ABSOLUTE_SITEURL = 'http://schnouki.net'
 
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'

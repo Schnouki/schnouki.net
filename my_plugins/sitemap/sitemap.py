@@ -59,9 +59,7 @@ class SitemapGenerator(object):
         self.output_path = output_path
         self.context = context
         self.now = datetime.now()
-        self.siteurl = settings.get('SITEURL')
-        if self.siteurl.startswith('//'):
-            self.siteurl = "http:" + self.siteurl
+        self.siteurl = settings.get('ABSOLUTE_SITEURL')
 
         self.format = 'xml'
 

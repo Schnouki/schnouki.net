@@ -10,6 +10,7 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 SITEURL = '//schnouki.net'
+ABSOLUTE_SITEURL = "http://schnouki.net"
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = "feed.atom"
