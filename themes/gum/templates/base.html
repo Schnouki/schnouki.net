@@ -45,6 +45,25 @@
 
         <script src="{{ SITEURL }}/theme/js/libs/modernizr-2.6.2.min.js"></script>
 
+        {% if FLATTR_USER %}
+        <!-- Flattr -->
+        <script type="text/javascript">
+        /* <![CDATA[ */
+            (function() {
+                var s = document.createElement('script');
+                var t = document.getElementsByTagName('script')[0];
+
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = '//api.flattr.com/js/0.6/load.js?'+
+                        'mode=auto&uid={{ FLATTR_USER }}&language={{ DEFAULT_LANG }}&category=text&button=compact';
+
+                t.parentNode.insertBefore(s, t);
+            })();
+        /* ]]> */
+        </script>
+        <!-- End Flattr code -->
+        {% endif %}
         {% if GOOGLE_ANALYTICS_ID %}
         <script>
                 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
