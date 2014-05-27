@@ -20,9 +20,9 @@ TAG_FEED_ATOM = "feed.tag-%s.atom"
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
-
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
+PIWIK_ENABLED = True
 
 # Flattr
 FLATTR_USER = 'Schnouki'
