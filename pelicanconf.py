@@ -62,3 +62,8 @@ TAG_CLOUD_MAX_ITEMS = 100
 PLUGIN_PATH = '.'
 PLUGINS = ['my_plugins.sitemap', 'plugins.summary']
 SITEMAP = {"format": "xml"}
+
+# Markdown extensions
+# pip install --user mdx_del_ins
+from mdx_del_ins import DelInsExtension
+MD_EXTENSIONS = [DelInsExtension()]
