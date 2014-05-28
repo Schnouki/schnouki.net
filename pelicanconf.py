@@ -53,6 +53,7 @@ THEME = "themes/gum"
 
 # Comments
 DISQUS_SITENAME = "devschnouki"
+DISQUS_CATEGORY_ID = "3080209"  # Dev
 
 # Tags
 TAG_CLOUD_STEPS = 4
