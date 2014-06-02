@@ -7,7 +7,7 @@ I love [git-annex][]. It works extremely well, its documentation is excellent, a
 amazingly reactive when you tell him about a bug or ask him any question about this software. I'm currently using
 git-annex to manage almost 1 TB of data, spread over my laptop, my NAS, a few external hard drives, and my [hubiC][]
 account. (Yes, git-annex is also designed to be able to use many different storage backends, and it's really easy to
-write new ones, [which I did got hubiC][git-annex-remote-hubic]; more on that later…)
+write new ones, [which I did for hubiC][git-annex-remote-hubic]; more on that later…)
 
 The biggest ~~issue~~ annoyance with git-annex is the lack of completion when using ZSH. The completion for git is
 amazing, so it's quite weird to have nothing for git-annex.
