@@ -67,4 +67,5 @@ SITEMAP = {"format": "xml"}
 # Markdown extensions
 # pip install --user mdx_del_ins
 from mdx_del_ins import DelInsExtension
-MD_EXTENSIONS = [DelInsExtension()]
+MD_EXTENSIONS = ["codehilite(css_class=highlight)", "extra",
+                 DelInsExtension()]
