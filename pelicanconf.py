@@ -4,11 +4,22 @@ from __future__ import unicode_literals
 AUTHOR = 'Thomas Jost'
 SITENAME = '/dev/schnouki'
 SITEURL = ''
+SITE_DESCRIPTION = "A blog about emacs, Linux, and other things that I care about."
 ABSOLUTE_SITEURL = 'http://schnouki.net'
+
+# TODO: import the content of about.md in LANDING_PAGE_ABOUT["details"]
+LANDING_PAGE_ABOUT = {
+}
+
+SITE_LICENSE = """
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png"/></a>
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">/dev/schnouki</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://schnouki.net/" property="cc:attributionName" rel="cc:attributionURL">Thomas Jost</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+"""
 
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 LOCALE = 'en_US'
+DEFAULT_DATE_FORMAT = "%Y-%m-%d"
 
 SUMMARY_MAX_LENGTH = None
 
@@ -37,19 +48,26 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%02m}/{date:%02d}/{slug}/index.html'
 
 # Social widget
 GITHUB_URL = "http://github.com/Schnouki"
-GOOGLEPLUS_URL = "https://plus.google.com/114147327713811044331"
-TWITTER_URL = "http://twitter.com/Schnouki"
-SOCIAL = (('Twitter',       TWITTER_URL),
-          ('Google+',       GOOGLEPLUS_URL),
-          ('GitHub',        GITHUB_URL),
-          ('StackOverflow', "http://stackoverflow.com/users/113325/schnouki"),
-          ('LinkedIn',      "http://fr.linkedin.com/in/thomasjost/"),)
+GOOGLEPLUS_URL = GOOGLE_PLUS_PROFILE_URL = "https://plus.google.com/114147327713811044331"
+TWITTER_USERNAME = "Schnouki"
+TWITTER_URL = "http://twitter.com/" + TWITTER_USERNAME
+SOCIAL_PROFILE_LABEL = "Stay in touch"
+SOCIAL = (
+    ("Email", "%73%63%68%6E%6F%75%6B%69%2B%62%6C%6F%67%40%73%63%68%6E%6F%75%6B%69%2E%6E%65%74"),
+    ('Twitter', TWITTER_URL),
+    ('Google+', GOOGLEPLUS_URL, 'google-plus'),
+    ('GitHub', GITHUB_URL),
+    ('StackOverflow', "http://stackoverflow.com/users/113325/schnouki", 'stack-overflow'),
+    ('LinkedIn', "http://fr.linkedin.com/in/thomasjost/"),
+    ("RSS", "/feed.atom"),
+)
 
 # Pagination
 DEFAULT_PAGINATION = 5
 
 # Theme
-THEME = "themes/gum"
+THEME = "themes/elegant"
+DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
 
 # Comments
 DISQUS_SITENAME = "devschnouki"
@@ -61,11 +79,13 @@ TAG_CLOUD_MAX_ITEMS = 100
 
 # Plugins
 PLUGIN_PATH = '.'
-PLUGINS = ['my_plugins.sitemap', 'plugins.summary']
+PLUGINS = ['my_plugins.sitemap',
+           'plugins.extract_toc', 'plugins.neighbors', 'plugins.share_post',
+           'plugins.related_posts', 'plugins.summary', 'plugins.tipue_search']
 SITEMAP = {"format": "xml"}
 
 # Markdown extensions
-# pip install --user mdx_del_ins
+# pip install --user mdx_del_ins beautifulsoup4
 from mdx_del_ins import DelInsExtension
-MD_EXTENSIONS = ["codehilite(css_class=highlight)", "extra",
+MD_EXTENSIONS = ["codehilite(css_class=highlight)", "extra", "headerid", "toc",
                  DelInsExtension()]
