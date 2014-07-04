@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Thomas Jost'
-SITENAME = '/dev/schnouki'
-SITEURL = ''
+AUTHOR = "Thomas Jost"
+SITENAME = "/dev/schnouki"
+SITEURL = ""
 SITE_DESCRIPTION = "A blog about emacs, Linux, and other things that I care about."
-ABSOLUTE_SITEURL = 'http://schnouki.net'
+ABSOLUTE_SITEURL = "http://schnouki.net"
 
 # TODO: import the content of about.md in LANDING_PAGE_ABOUT["details"]
 LANDING_PAGE_ABOUT = {
@@ -16,9 +16,9 @@ SITE_LICENSE = """
 <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">/dev/schnouki</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://schnouki.net/" property="cc:attributionName" rel="cc:attributionURL">Thomas Jost</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 """
 
-TIMEZONE = 'Europe/Paris'
-DEFAULT_LANG = 'en'
-LOCALE = 'en_US'
+TIMEZONE = "Europe/Paris"
+DEFAULT_LANG = "en"
+LOCALE = "en_US"
 DEFAULT_DATE_FORMAT = "%Y-%m-%d"
 
 SUMMARY_MAX_LENGTH = None
@@ -29,16 +29,17 @@ RELATIVE_URLS = True
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
+AUTHOR_FEED_ATOM = AUTHOR_FEED_RSS = None
 TAG_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 FEED_MAX_ITEMS = 10
 
 # Paths
-STATIC_PATHS = ['files', 'images', 'videos', '.well-known']
+STATIC_PATHS = ["files", "images", "videos", ".well-known"]
 
 # URLs
-ARTICLE_URL = 'posts/{date:%Y}/{date:%02m}/{date:%02d}/{slug}/'
-ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%02m}/{date:%02d}/{slug}/index.html'
+ARTICLE_URL = "posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/"
+ARTICLE_SAVE_AS = "posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html"
 
 # Blogroll
 # LINKS =  (('Pelican', 'http://getpelican.com/'),
@@ -54,11 +55,11 @@ TWITTER_URL = "http://twitter.com/" + TWITTER_USERNAME
 SOCIAL_PROFILE_LABEL = "Stay in touch"
 SOCIAL = (
     ("Email", "%73%63%68%6E%6F%75%6B%69%2B%62%6C%6F%67%40%73%63%68%6E%6F%75%6B%69%2E%6E%65%74"),
-    ('Twitter', TWITTER_URL),
-    ('Google+', GOOGLEPLUS_URL, 'google-plus'),
-    ('GitHub', GITHUB_URL),
-    ('StackOverflow', "http://stackoverflow.com/users/113325/schnouki", 'stack-overflow'),
-    ('LinkedIn', "http://fr.linkedin.com/in/thomasjost/"),
+    ("Twitter", TWITTER_URL),
+    ("Google+", GOOGLEPLUS_URL, "google-plus"),
+    ("GitHub", GITHUB_URL),
+    ("StackOverflow", "http://stackoverflow.com/users/113325/schnouki", "stack-overflow"),
+    ("LinkedIn", "http://fr.linkedin.com/in/thomasjost/"),
     ("RSS", "/feed.atom"),
 )
 
@@ -67,7 +68,8 @@ DEFAULT_PAGINATION = 5
 
 # Theme
 THEME = "themes/elegant"
-DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))
+DIRECT_TEMPLATES = (("index", "tags", "categories", "archives",
+                     "search", "404"))
 
 # Comments
 DISQUS_SITENAME = "devschnouki"
@@ -78,10 +80,11 @@ TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 100
 
 # Plugins
-PLUGIN_PATH = '.'
-PLUGINS = ['my_plugins.sitemap',
-           'plugins.extract_toc', 'plugins.neighbors', 'plugins.share_post',
-           'plugins.related_posts', 'plugins.summary', 'plugins.tipue_search']
+PLUGIN_PATHS = ["my_plugins", "plugins"]
+PLUGINS = ["my_sitemap",
+           "extract_toc", "neighbors", "related_posts", "share_post", "summary",
+           "tipue_search"]
+
 SITEMAP = {"format": "xml"}
 
 # Markdown extensions
