@@ -12,6 +12,9 @@ You can contact me here by commenting on a post, or by
 my [GnuPG key]({filename}/files/pubkey-C0478597.asc) (ID: C0478597; I'm also on
 [Keybase](https://keybase.io/schnouki)!).
 
+If you like what's on this blog, you can [flattr it](//flattr.com/thing/32752/devschnouki), or send me a few
+[μBTC](bitcoin:1NNji5k1aj8HnoZucYRN5GkfFw5v5atVJH) or [μLTC](litecoin:LXKARYw25RJEGuW7oqei4aJ169PqTsZLM3).
+
 
 Mentions légales / boring French legal stuff
 --------------------------------------------
