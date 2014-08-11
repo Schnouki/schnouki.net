@@ -7,9 +7,37 @@ SITEURL = ""
 SITE_DESCRIPTION = "A blog about emacs, Linux, and other things that I care about."
 ABSOLUTE_SITEURL = "http://schnouki.net"
 
-# TODO: import the content of about.md in LANDING_PAGE_ABOUT["details"]
 LANDING_PAGE_ABOUT = {
+    "title": "/dev/schnouki",
+    "details": """Hi there! I'm Thomas Jost, aka "Schnouki". I'm a French software engineer,
+    currently working at <a href="http://www.findspire.com/">Findspire</a>, and
+    this is my personal blog.<br/>
+    <small><a href="/pages/about-me.html">↪ Details</a></small>"""
 }
+
+PROJECTS = [
+    {
+        "name": "spop",
+        "url": "https://github.com/Schnouki/spop/",
+        "description": "A Spotify client running as a daemon, similar to mpd.",
+    }, {
+        "name": "git-annex-remote-hubic",
+        "url": "https://github.com/Schnouki/git-annex-remote-hubic",
+        "description": "A git-annex special remote for hubiC",
+    }, {
+        "name": "git-annex-zsh-completion",
+        "url": "https://github.com/Schnouki/git-annex-zsh-completion",
+        "description": "zsh completion for git-annex",
+    }, {
+        "name": "bccc",
+        "url": "https://github.com/Schnouki/bccc",
+        "description": "buddycloud console client",
+    }, {
+        "name": "pympress",
+        "url": "https://github.com/Schnouki/pympress",
+        "description": "A simple dual-screen PDF reader designed for presentations",
+    }
+]
 
 SITE_LICENSE = """
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/80x15.png"/></a>
@@ -54,7 +82,7 @@ TWITTER_USERNAME = "Schnouki"
 TWITTER_URL = "http://twitter.com/" + TWITTER_USERNAME
 SOCIAL_PROFILE_LABEL = "Stay in touch"
 SOCIAL = (
-    ("Email", "%73%63%68%6E%6F%75%6B%69%2B%62%6C%6F%67%40%73%63%68%6E%6F%75%6B%69%2E%6E%65%74"),
+    ("Email", "mailto:%73%63%68%6E%6F%75%6B%69%2B%62%6C%6F%67%40%73%63%68%6E%6F%75%6B%69%2E%6E%65%74"),
     ("Twitter", TWITTER_URL),
     ("Google+", GOOGLEPLUS_URL, "google-plus"),
     ("GitHub", GITHUB_URL),
