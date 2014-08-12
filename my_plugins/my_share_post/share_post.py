@@ -23,7 +23,7 @@ def article_title(content):
 
 
 def article_url(content):
-    site_url = content.settings['SITEURL']
+    site_url = content.settings['ABSOLUTE_SITEURL']
     return quote(('%s/%s' % (site_url, content.url)).encode('utf-8'))
 
 
