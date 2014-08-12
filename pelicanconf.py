@@ -109,8 +109,8 @@ TAG_CLOUD_MAX_ITEMS = 100
 
 # Plugins
 PLUGIN_PATHS = ["my_plugins", "plugins"]
-PLUGINS = ["my_sitemap",
-           "extract_toc", "neighbors", "related_posts", "share_post", "summary",
+PLUGINS = ["my_sitemap", "my_share_post",
+           "extract_toc", "neighbors", "related_posts", "summary",
            "tipue_search"]
 
 SITEMAP = {"format": "xml"}
