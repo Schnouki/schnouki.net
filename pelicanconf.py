@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
+import sys
+sys.path.append(os.curdir)
 
 AUTHOR = "Thomas Jost"
 SITENAME = "/dev/schnouki"
@@ -118,5 +121,7 @@ SITEMAP = {"format": "xml"}
 # Markdown extensions
 # pip install --user mdx_del_ins beautifulsoup4
 from mdx_del_ins import DelInsExtension
+from my_plugins import mdx_gist
 MD_EXTENSIONS = ["codehilite(css_class=highlight)", "extra", "headerid", "toc",
-                 DelInsExtension()]
+                 DelInsExtension(),
+                 mdx_gist.GistExtension(configs={"cache": "cache/gist", "css_class": "highlight"})]
