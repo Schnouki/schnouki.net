@@ -22,9 +22,11 @@ def article_title(content):
     return quote(('%s %s' % (main_title, sub_title)).encode('utf-8'))
 
 
-def article_url(content):
+def article_url(content, campaign=None):
     site_url = content.settings['ABSOLUTE_SITEURL']
-    return quote(('%s/%s' % (site_url, content.url)).encode('utf-8'))
+    if campaign is not None:
+        campaign = "#pk_campaign=" + campaign
+    return quote(('%s/%s%s' % (site_url, content.url, campaign)).encode('utf-8'))
 
 
 def article_summary(content):
@@ -35,16 +37,20 @@ def share_post(content):
     if isinstance(content, contents.Static):
         return
     title = article_title(content)
-    url = article_url(content)
     summary = article_summary(content)
 
-    tweet = '%s %s' % (title, url)
+    facebook_url = article_url(content, "share_fb")
+    gplus_url = article_url(content, "share_gplus")
+    twitter_url = article_url(content, "share_tw")
+    mail_url = article_url(content, "share_mail")
+
+    tweet = '%s %s' % (title, twitter_url)
     facebook_link = 'http://www.facebook.com/sharer/sharer.php?s=100' \
                     '&p[url]=%s&p[images][0]=&p[title]=%s&p[summary]=%s' \
-                    % (url, title, summary)
-    gplus_link = 'https://plus.google.com/share?url=%s' % url
+                    % (facebook_url, title, summary)
+    gplus_link = 'https://plus.google.com/share?url=%s' % gplus_url
     twitter_link = 'http://twitter.com/home?status=%s' % tweet
-    mail_link = 'mailto:?subject=%s&body=%s' % (title, url)
+    mail_link = 'mailto:?subject=%s&body=%s' % (title, mail_url)
 
     share_links = {'twitter': twitter_link,
                    'facebook': facebook_link,
