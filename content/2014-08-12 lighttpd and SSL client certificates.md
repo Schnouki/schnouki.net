@@ -1,5 +1,6 @@
 Title: lighttpd and SSL client certificates
 Date: 2014-08-12 12:07
+Modified: 2014-09-18 08:59
 Category: Software
 Tags: lighttpd, SSL, security
 
@@ -40,20 +41,17 @@ subdomain. Here's a quick how-to.
 5.  Configure lighttpd.
 
     1. If you haven't configured SSL in lighttpd yet, [do it][ssl-details].
-    2. Add your newly generated `ca.crt` to the PEM file you're using as `ssl.ca-file` in lighttpd. I'm using StartSSL,
-        so my `ca-file` contains the StartSSL root CA and its Class 1 certificate, so I use the following to generate my
-        `ca-file`:
+    2. Add your newly generated `ca.crt` as the `ssl.ca-file` for the private subdomain:
 
             :::console
-            $ cat /etc/ssl/startssl/ca.pem /etc/ssl/startssl/sub.class1.server.ca.pem ./ca.crt > /etc/lighttpd/ca.pem
             $ cat /etc/lighttpd/lighttpd.conf | grep ssl.ca-file
-                ssl.ca-file = "/etc/lighttpd/ca.pem"
+                ssl.ca-file = "/etc/lighttpd/ca-client.pem"
 
     3. Enable client certificate verification in lighttpd:
 
             :::lighttpd
             $HTTP["host"] == "my-ssl-domain" {
-                ssl.ca-file = "/etc/lighttpd/ca.pem"
+                ssl.ca-file = "/etc/lighttpd/ca-client.pem"
                 ssl.verifyclient.activate = "enable"
                 ssl.verifyclient.enforce = "enable"
                 ssl.verifyclient.username = "SSL_CLIENT_S_DN_CN"
