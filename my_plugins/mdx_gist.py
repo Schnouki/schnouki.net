@@ -58,7 +58,7 @@ GIST_RE = r"^\[gist:([0-9a-fA-F]+)(?:,file\=([^,\]]+))?(?:,lang\=([^,\]]+))?\]"
 class GistPattern(Pattern):
     @property
     def gist_cache(self):
-        if hasattr(self, "_gist_cache"):
+        if hasattr(self, "_gist_cache") and self._gist_cache != "":
             return self._gist_cache
         else:
             return None
@@ -148,9 +148,16 @@ class GistPattern(Pattern):
         logger.info(msg + ": added to cache")
 
 class GistExtension(Extension):
+    def __init__(self, **kwargs):
+        self.config = {
+            "cache": ["", "Path to the Gist cache"],
+            "css_class": ["codehilite", "Name of the CSS class used by CodeHilite"],
+        }
+        super(GistExtension, self).__init__(**kwargs)
+
     def extendMarkdown(self, md, md_globals):
         pattern = GistPattern(GIST_RE)
-        pattern.gist_cache = self.config.get("cache", None)
-        pattern.css_class = self.config.get("css_class", "codehilite")
+        pattern.gist_cache = self.getConfig("cache")
+        pattern.css_class = self.getConfig("css_class")
         pattern.md = md
         md.inlinePatterns.add("gist", pattern, "_end")
