@@ -111,6 +111,7 @@ TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 100
 
 # Plugins
+# pip install --user webassets yuicompressor
 PLUGIN_PATHS = ["my_plugins", "plugins"]
 PLUGINS = ["my_sitemap", "my_share_post",
            "extract_toc", "neighbors", "related_posts", "summary",

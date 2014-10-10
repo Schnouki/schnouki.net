@@ -18,6 +18,7 @@ CATEGORY_FEED_ATOM = "feed.cat-%s.atom"
 TAG_FEED_ATOM = "feed.tag-%s.atom"
 
 DELETE_OUTPUT_DIRECTORY = True
+PLUGINS += ["assets"]
 
 # Following items are often useful when publishing
 DISQUS_CATEGORY_ID = "305841"  # General
