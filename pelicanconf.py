@@ -106,6 +106,9 @@ DIRECT_TEMPLATES = (("index", "tags", "categories", "archives",
 DISQUS_SITENAME = "devschnouki"
 DISQUS_CATEGORY_ID = "3080209"  # Dev
 
+# WOT verification
+WOT_VERIFICATION = "e25aa11fbca7a793ac6d"
+
 # Tags
 TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 100
