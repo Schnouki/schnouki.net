@@ -1,5 +1,6 @@
 Title: Flashing a stock Android image without wiping user data
 Date: 2014-08-13 23:58
+Modified: 2014-11-21 08:40
 Category: Software
 Tags: Android
 
@@ -69,6 +70,8 @@ extremely easy to restore:
 
 I'm sure all of this is common knowledge for a lot of people. But it's not obvious to me, so I'm just putting it here
 for the next time I need it :)
+
+**EDIT:** Just tried it and I can confirm that it works well to upgrade from Android 4.4.4. to Android 5.0 "Lollipop"!
 
 [Nexus 10]: https://www.google.com/nexus/10/
 [SuperSU]: http://download.chainfire.eu/supersu
