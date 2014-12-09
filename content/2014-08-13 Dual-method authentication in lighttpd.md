@@ -22,7 +22,7 @@ certificate.
 However basic auth is a really simplistic process, so writing a module that will perform such an authentication is quite
 easy: it's just a matter of writing some Lua code and enabling it with [`mod_magnet`][mod_magnet].
 
-So here it is: `comfy-auth.lua`, a nice a comfy authentication method for lighttpd :)
+So here it is: `comfy-auth.lua`, a nice a comfy authentication method for lighttpd :smiley:
 
 [gist:dee1766f2c7486dbf712,file=comfy-auth.lua,lang=lua]
 
@@ -46,7 +46,7 @@ The `htdigest` file is generated with this simple shell script:
     echo "$user:$realm:$hash"
 
 Using this config, I can now authenticate on my private domain using either a client certificate, or simple
-basic authentication. And it was fun to do :)
+basic authentication. And it was fun to do :smiley:
 
 
 [CGP]: https://github.com/pommi/CGP/

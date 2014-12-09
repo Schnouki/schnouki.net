@@ -31,13 +31,13 @@ resulting in many lost tags...
 
 So I tried to use [jpegtran][] to do the same. It also supports progressive
 JPEG, and is apparently much better at not destroying metadata when not asked to
-do so :) Here is the command I use to optimize my pictures with it:
+do so :smiley: Here is the command I use to optimize my pictures with it:
 
     :::sh
     parallel -u 'echo {}; jpegtran -optimize -progressive -perfect -copy all -outfile {}.tran {} && mv {}.tran {}' ::: *.JPG
 
 `parallel` is [GNU Parallel][parallel], a tool which is very useful to speed
-things up by using the 16 cores of my work PC to do the job :)
+things up by using the 16 cores of my work PC to do the job :smiley:
 
 Using `jpegtran` this way, I reduced the size of my "London" folder from 4.0 GB
 to 3.5 GB, i.e. a 12.5% reduction with absolutely no quality loss. Not bad!

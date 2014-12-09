@@ -25,7 +25,7 @@ quite different. But it can be easily created using the `tlsa` tool included in 
 available on the [AUR][].)
 
 This record can then be added to the zone on OVH without any problem. By the way, my blog is now secured by DANE and
-TLSA, as demonstrated by the [DNSSEC/TLSA-Validator][validator] Firefox add-on :)
+TLSA, as demonstrated by the [DNSSEC/TLSA-Validator][validator] Firefox add-on :smiley:
 
 ![TLSA FTW!]({static|/images/2014/tlsa-url.png})
 

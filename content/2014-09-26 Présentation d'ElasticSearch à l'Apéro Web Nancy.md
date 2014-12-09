@@ -12,11 +12,11 @@ ElasticSearch, les démos utilisées pendant la présentation, et les scripts pe
 partir des API Google Places et BreweryDB.
 
 Tous les détails sur comment faire sont dans le [README][]. La première étape est donc un petit `git clone
-https://code.schnouki.net/aperoweb-es.git` :)
+https://code.schnouki.net/aperoweb-es.git` :smiley:
 
 Les slides sont aussi disponibles en [PDF]({static "/files/2014/Jouons un peu avec ElasticSearch.pdf"}).
 
-*Happy hacking*, et n'hésitez pas à me contacter si vous avez des questions :)
+*Happy hacking*, et n'hésitez pas à me contacter si vous avez des questions :smiley:
 
 
 [awn]: https://plus.google.com/u/1/communities/108954298677595658174

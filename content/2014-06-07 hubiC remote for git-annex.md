@@ -15,7 +15,7 @@ using it for a few months and I'm quite happy with it. It has the following feat
 - uses [rauth][] for OAuth 2 authentication and [python-swiftclient][] for the SWIFT storage
 - support for common git-annex operations: store, retrieve, check, delete
 - connection pooling to improve performances
-- everything is encrypted if git-annex is told to do so :)
+- everything is encrypted if git-annex is told to do so :smiley:
 - the MD5 of each transfered file is checked both on the client and on the server to prevent data corruption
 - data can be stored in any SWIFT container to avoid polluting the hubiC web app
 - **NEW:** large files are stored in several chunks (of configurable size; defaults to 1 GB) to bypass the hubiC limit of

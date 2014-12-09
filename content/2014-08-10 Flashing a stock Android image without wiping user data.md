@@ -69,7 +69,7 @@ extremely easy to restore:
 - reboot and start the SuperSU app.
 
 I'm sure all of this is common knowledge for a lot of people. But it's not obvious to me, so I'm just putting it here
-for the next time I need it :)
+for the next time I need it :smiley:
 
 **EDIT:** Just tried it and I can confirm that it works well to upgrade from Android 4.4.4. to Android 5.0 "Lollipop"!
 
