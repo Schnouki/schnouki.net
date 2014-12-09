@@ -4,3 +4,6 @@
 [submodule "themes/elegant"]
 	path = themes/elegant
 	url = https://github.com/Schnouki/pelican-elegant
+[submodule "my_plugins/emojis"]
+	path = my_plugins/emojis
+	url = https://github.com/arvida/emoji-cheat-sheet.com

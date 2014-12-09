@@ -126,7 +126,8 @@ SITEMAP = {"format": "xml"}
 # Markdown extensions
 # pip install --user mdx_del_ins beautifulsoup4
 from mdx_del_ins import DelInsExtension
-from my_plugins import mdx_gist
+from my_plugins import mdx_emojis, mdx_gist
 MD_EXTENSIONS = ["codehilite(css_class=highlight)", "extra", "headerid", "toc",
                  DelInsExtension(),
+                 mdx_emojis.EmojifyExtension(),
                  mdx_gist.GistExtension(cache="cache/gist", css_class="highlight")]
