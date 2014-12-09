@@ -7,7 +7,7 @@ Tags: webcomic, France, PhD, PHD Comics
 This morning I read the [latest *Piled Higher & Deeper*][phd] about *égalité des
 chances*.
 
-[ ![Contes de la route: Equal Opportunity]({filename}/images/2010/phd1292_1.gif) ][phd]
+[ ![Contes de la route: Equal Opportunity]({static|/images/2010/phd1292_1.gif}) ][phd]
 
 I am part of the few people who do a PhD after a *grande école*. The part about
 "Good job €€€€" vs "Crappy job" is quite true – except that, from what I

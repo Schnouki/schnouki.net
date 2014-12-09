@@ -4,11 +4,11 @@ Category: Media
 Date: 2009-08-25
 Tags: LORIA, night
 
-![Hall]({filename}/images/2009/loria1.jpg "Hall")
+![Hall]({static|/images/2009/loria1.jpg} "Hall")
 
-![Hall (direction : la machine à café !)]({filename}/images/2009/loria2.jpg "Hall, direction : la machine à café !")
+![Hall (direction : la machine à café !)]({static|/images/2009/loria2.jpg} "Hall, direction : la machine à café !")
 
-![Le bâtiment vu de l'extérieur]({filename}/images/2009/loria3.jpg "Le bâtiment vu de l'extérieur")
+![Le bâtiment vu de l'extérieur]({static|/images/2009/loria3.jpg} "Le bâtiment vu de l'extérieur")
 
 LORIA by night... C'est la première fois que je reste aussi tard au labo, et
 c'est assez sympa la nuit. Et c'est fun parce que même en partant à 21h, je

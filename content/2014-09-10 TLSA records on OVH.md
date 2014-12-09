@@ -27,7 +27,7 @@ available on the [AUR][].)
 This record can then be added to the zone on OVH without any problem. By the way, my blog is now secured by DANE and
 TLSA, as demonstrated by the [DNSSEC/TLSA-Validator][validator] Firefox add-on :)
 
-![TLSA FTW!]({filename}/images/2014/tlsa-url.png)
+![TLSA FTW!]({static|/images/2014/tlsa-url.png})
 
 [AUR]: https://aur.archlinux.org/packages/hash-slinger/
 [DANE]: https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities

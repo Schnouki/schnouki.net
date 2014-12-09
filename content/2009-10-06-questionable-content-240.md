@@ -4,4 +4,4 @@ Date: 2009-10-06
 Category: Media
 Tags: questionable content, culture, webcomic
 
-[![QC240]({filename}/images/2009/qc240.png)](http://www.questionablecontent.net/view.php?comic=240)
+[![QC240]({static|/images/2009/qc240.png})](http://www.questionablecontent.net/view.php?comic=240)
