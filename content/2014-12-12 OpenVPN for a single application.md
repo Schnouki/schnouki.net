@@ -1,5 +1,6 @@
 Title: OpenVPN for a single application on Linux
 Date: 2014-12-12
+Modified: 2014-12-17
 Category: Software
 Tags: howto, openvpn, privacy, security, vpn
 
@@ -73,8 +74,9 @@ Since this is a little long to do, I wrote a little helper script to manage the 
 [any app I want][popcorntime] in this namespace. They are available in [this gist][gist].
 
 The only issue I still have is how to let the application inside the namespace access my Chromecast… If anyone has
-ideas, I'm interested :smiley:
+ideas, I'm interested :smiley: **EDIT:** [It works!][chromecast] :yum:
 
+[chromecast]: /posts/2014/12/17/chromecast-and-network-namespaces/
 [gist]: https://gist.github.com/Schnouki/fd171bcb2d8c556e8fdf
 [netns]: https://lwn.net/Articles/580893/
 [popcorntime]: https://popcorntime.io/
