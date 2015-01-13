@@ -66,6 +66,7 @@ TRANSLATION_FEED_ATOM = None
 FEED_MAX_ITEMS = 10
 
 # Paths
+PATH = 'content'
 STATIC_PATHS = ["files", "images", "videos", ".well-known"]
 
 # URLs
