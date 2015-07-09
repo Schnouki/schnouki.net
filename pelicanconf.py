@@ -54,9 +54,6 @@ DEFAULT_DATE_FORMAT = "%Y-%m-%d"
 
 SUMMARY_MAX_LENGTH = None
 
-# Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
-
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -97,6 +94,9 @@ SOCIAL = (
 
 # Pagination
 DEFAULT_PAGINATION = 5
+
+# Uncomment following line if you want document-relative URLs when developing
+RELATIVE_URLS = True
 
 # Theme
 THEME = "themes/elegant"
