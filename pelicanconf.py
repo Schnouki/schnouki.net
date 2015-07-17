@@ -110,6 +110,9 @@ DISQUS_CATEGORY_ID = "3080209"  # Dev
 # WOT verification
 WOT_VERIFICATION = "e25aa11fbca7a793ac6d"
 
+# Embedly Cards
+EMBEDLY_CARDS = True
+
 # Tags
 TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 100
@@ -127,8 +130,9 @@ SITEMAP = {"format": "xml"}
 # Markdown extensions
 # pip install --user mdx_del_ins beautifulsoup4
 from mdx_del_ins import DelInsExtension
-from my_plugins import mdx_emojis, mdx_gist
+from my_plugins import mdx_embed, mdx_emojis, mdx_gist
 MD_EXTENSIONS = ["codehilite(css_class=highlight)", "extra", "headerid", "toc",
                  DelInsExtension(),
+                 mdx_embed.EmbedlyExtension(),
                  mdx_emojis.EmojifyExtension(),
                  mdx_gist.GistExtension(cache="cache/gist", css_class="highlight")]
