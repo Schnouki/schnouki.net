@@ -40,6 +40,10 @@ class EmbedlyPattern(Pattern):
                 link += ' data-card-{key}="{value}"'.format(key=key, value=value)
         link += ' href="{url}">{title}</a>'.format(url=url, title=params.get("title", ""))
 
+        # Add "has embedly" to the metadata
+        if hasattr(self.md, "Meta"):
+            self.md.Meta["has_embedly_card"] = "True"
+
         return self.md.htmlStash.store(link)
 
 
