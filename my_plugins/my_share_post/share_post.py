@@ -35,7 +35,7 @@ def share_post(content):
     title = article_title(content)
     _url = lambda cp: article_url(content, "share_" + cp)
 
-    tweet = ('%s%s%s' % (title, quote(' '), _url("tw"))).encode('utf-8')
+    tweet = ('%s%s%s' % (title, quote(' '), _url("tw")))
     diaspora_link = 'https://sharetodiaspora.github.io/?title=%s&url=%s' % (title, _url("diasp"))
     facebook_link = 'http://www.facebook.com/sharer/sharer.php?s=100&amp;p%%5Burl%%5D=%s' % _url("fb")
     gplus_link = 'https://plus.google.com/share?url=%s' % _url("gplus")
