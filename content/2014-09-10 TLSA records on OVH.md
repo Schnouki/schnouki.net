@@ -1,5 +1,6 @@
 Title: TLSA records on OVH
 Date: 2014-09-10 11:37
+Modified: 2015-10-09 11:15
 Category: Software
 Tags: dns, dnssec, security, SSL, TLSA
 
@@ -13,6 +14,8 @@ It is also extremely simple to generate TLSA records for your domain using onlin
 However, if you're hosting your DNS zone on OVH (or any other provider with a version of BIND that does not
 support the TLSA RRtype), it gets a little bit more complicated: adding a TLSA record to your zone will make the web
 interface complain that this RRtype is unknown.
+
+**EDIT:** OVH now supports TLSA! See the update below.
 
 However it is still possible to add TLSA records to OVH by using a "generic", numeric RRtype. The format however is
 quite different. But it can be easily created using the `tlsa` tool included in [hash-slinger][]:
@@ -29,7 +32,18 @@ TLSA, as demonstrated by the [DNSSEC/TLSA-Validator][validator] Firefox add-on :
 
 ![TLSA FTW!]({static|/images/2014/tlsa-url.png})
 
+**UPDATE:** OVH now supports records with the TLSA type in its new Manager V6 when editing the zone in text mode. So now
+it's possible to use the "RFC" output in `tlsa`:
+
+    :::console
+    $ tlsa --usage 1 --selector 1 --mtype 1 --output rfc --certificate /path/to/certificate.pem example.com
+    _443._tcp.example.com. IN TLSA 1 1 1 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+
+Thanks [@slashdevsda][]!
+
+
 [AUR]: https://aur.archlinux.org/packages/hash-slinger/
 [DANE]: https://en.wikipedia.org/wiki/DNS-based_Authentication_of_Named_Entities
 [hash-slinger]: http://people.redhat.com/pwouters/hash-slinger/
 [validator]: https://www.dnssec-validator.cz/
+[@slashdevsda]: https://twitter.com/slashdevsda
