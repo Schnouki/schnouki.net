@@ -10,6 +10,9 @@ SITEURL = ""
 SITE_DESCRIPTION = "A blog about emacs, Linux, and other things that I care about."
 ABSOLUTE_SITEURL = "http://schnouki.net"
 
+# Include drafts in development
+INCLUDE_DRAFTS = True
+
 LANDING_PAGE_ABOUT = {
     "title": "/dev/schnouki",
     "details": """Hi there! I'm Thomas Jost, aka "Schnouki". I'm a French software engineer,

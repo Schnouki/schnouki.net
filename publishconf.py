@@ -12,6 +12,7 @@ from pelicanconf import *
 SITEURL = '//schnouki.net'
 ABSOLUTE_SITEURL = "http://schnouki.net"
 RELATIVE_URLS = False
+INCLUDE_DRAFTS = False
 
 FEED_ALL_ATOM = "feed.atom"
 CATEGORY_FEED_ATOM = "feed.cat-%s.atom"
