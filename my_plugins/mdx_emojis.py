@@ -25,7 +25,6 @@
 
 import os, os.path
 import re
-import sys
 
 from markdown.extensions import Extension
 from markdown.preprocessors import Preprocessor

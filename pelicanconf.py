@@ -122,7 +122,7 @@ TAG_CLOUD_MAX_ITEMS = 100
 PLUGIN_PATHS = ["my_plugins", "plugins"]
 PLUGINS = ["autostatic",
            "my_sitemap", "my_share_post",
-           "extract_toc", "neighbors", "related_posts", "summary",
+           "neighbors", "related_posts", "summary",
            "tipue_search"]
 
 SITEMAP = {"format": "xml"}
@@ -131,7 +131,7 @@ SITEMAP = {"format": "xml"}
 # pip install --user mdx_del_ins beautifulsoup4
 from mdx_del_ins import DelInsExtension
 from my_plugins import mdx_embed, mdx_emojis, mdx_gist
-MD_EXTENSIONS = ["codehilite(css_class=highlight)", "extra", "headerid", "toc",
+MD_EXTENSIONS = ["codehilite(css_class=highlight)", "extra", "headerid",
                  DelInsExtension(),
                  mdx_embed.EmbedlyExtension(),
                  mdx_emojis.EmojifyExtension(),
