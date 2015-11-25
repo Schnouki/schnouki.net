@@ -46,6 +46,7 @@ help:
 	@echo '   make regenerate                     regenerate files upon modification '
 	@echo '   make publish                        generate using production settings '
 	@echo '   make serve [PORT=8000]              serve site at http://localhost:8000'
+	@echo '   make serve-devd [PORT=8000]         serve site with devd               '
 	@echo '   make serve-global [SERVER=0.0.0.0]  serve (as root) to $(SERVER):80    '
 	@echo '   make devserver [PORT=8000]          start/restart develop_server.sh    '
 	@echo '   make stopserver                     stop local server                  '
@@ -75,6 +76,13 @@ ifdef PORT
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
 else
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server
+endif
+
+serve-devd:
+ifdef PORT
+	cd $(OUTPUTDIR) && devd -p $(PORT) -l .
+else
+	cd $(OUTPUTDIR) && devd -p 8000 -l .
 endif
 
 serve-global:
