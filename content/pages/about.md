@@ -1,7 +1,6 @@
 Title: About me
 
-I'm Thomas Jost, aka "Schnouki". I'm a French Software engineer, currently working at
-[Findspire](http://www.findspire.com/).
+I'm Thomas Jost, aka "Schnouki". I'm a French software engineer and full-stack developer.
 
 I love Free Software, GNU/Linux, reading science-fiction books, and watching good TV shows. My text editor is Emacs.
 Most of the time I hack in Python, except when I feel like writing some Go.

@@ -15,9 +15,8 @@ INCLUDE_DRAFTS = True
 
 LANDING_PAGE_ABOUT = {
     "title": "/dev/schnouki",
-    "details": """Hi there! I'm Thomas Jost, aka "Schnouki". I'm a French software engineer,
-    currently working at <a href="http://www.findspire.com/">Findspire</a>, and
-    this is my personal blog.<br/>
+    "details": """Hi there! I'm Thomas Jost, aka "Schnouki". I'm a French software engineer and
+    full-stack developer, and this is my personal blog.<br/>
     <small><a href="/pages/about-me.html">↪ Details</a></small>"""
 }
 
@@ -94,6 +93,7 @@ SOCIAL = (
     ("LinkedIn", "http://fr.linkedin.com/in/thomasjost/"),
     ("RSS", "/feed.atom"),
 )
+FEATURED_IMAGE = "images/profile.jpg"
 
 # Pagination
 DEFAULT_PAGINATION = 5
