@@ -94,6 +94,7 @@ SOCIAL = (
     ("RSS", "/feed.atom"),
 )
 FEATURED_IMAGE = "images/profile.jpg"
+SUMMARY_USE_FIRST_PARAGRAPH = True
 
 # Pagination
 DEFAULT_PAGINATION = 5
