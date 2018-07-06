@@ -1,0 +1,25 @@
+[about]
+title = ""
+description = ""
+logo = "/img/thomas-200.png"
+
+[recent_posts]
+title = ""
+length = 5
+excludeTypes = ["page"]
+
+[search]
+title = "Search"
+
+[sidebar_menu]
+title = ""
+mirror = "main"
+
+[social_menu]
+title = ""
+platforms = ["github","gitlab","facebook","twitter","instagram","email","codepen","linkedin","telegram","google_scholar","youtube"]
+
+[taxonomy_cloud]
+title = ""
+taxonomy = "tags"
+shuffle = false
