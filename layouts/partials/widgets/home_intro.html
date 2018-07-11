@@ -1,0 +1,31 @@
+{{- $configData := .Site.Data.config.widgets.home_intro -}}
+{{- $lang := .Site.Language.Lang -}}
+{{- $config := ( ( index $configData $lang ) | default $configData ) -}}
+
+{{- $items := .Site.Menus.home_intro -}}
+
+<section class='widget widget-home_intro sep-after'>
+  <div class="intro-text">
+    <h4 class="title widget-title">{{ $config.title }}</h4>
+    <p>{{ $config.text }}</p>
+    {{- if $config.linkURL }}
+    <div class="intro-link">
+      <a href="{{ $config.linkURL }}">{{ $config.linkText }}</a>
+    </div>
+    {{- end }}
+  </div>
+
+  {{- if $items }}
+  <div class="intro-menu">
+    <h4 class="title widget-title">{{ $config.menuTitle }}</h4>
+    <ul class="list">
+      {{- range $items -}}
+      <li>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+        <span class="intro-menu-desc">{{ .Title }}</span>
+      </li>
+      {{- end -}}
+    </ul>
+  </div>
+  {{- end }}
+</section>

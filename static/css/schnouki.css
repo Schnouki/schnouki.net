@@ -1,0 +1,32 @@
+.intro-link {
+    margin-top: -1.5em;
+}
+.intro-link a {
+    font-size: .9em;
+}
+.intro-menu {
+    margin-top: 1.5em;
+}
+.intro-menu li:not(:last-child) {
+    border-bottom: 1px dashed #bdbdbd; /* $color_grey */
+}
+.intro-menu-desc {
+    padding-left: 1em;
+    font-size: .9em;
+}
+
+@media screen and (min-width: 920px) {
+    .widget-home_intro {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between
+    }
+    .intro-text {
+        width: 50%;
+    }
+    .intro-menu {
+        margin-top: 0;
+        width: calc(50% - 2.5em);
+    }
+}

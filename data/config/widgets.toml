@@ -23,3 +23,11 @@ platforms = ["github","gitlab","facebook","twitter","instagram","email","codepen
 title = ""
 taxonomy = "tags"
 shuffle = false
+
+[home_intro]
+title = "About me"
+text = """Hi there! I'm Thomas Jost, aka "Schnouki". I'm a French software engineer and full-stack developer, and this is my personal blog."""
+linkURL = "/about-me/"
+linkText = "→ Details"
+
+menuTitle = "My projects"

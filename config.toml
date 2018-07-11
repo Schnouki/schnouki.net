@@ -29,7 +29,7 @@ title404 = "There's nothing here!"
 
 [params.assets]
 favicon = "favicon.ico"
-customCSS = [] # "css/schnouki.css"
+customCSS = ["css/schnouki.css"]
 customJS = [] # "js/schnouki.js"]
 gopher = "/img/gopher.png" # used in 404 template ( Generator: https://gopherize.me )
 
@@ -54,7 +54,7 @@ hideMainMenu = true
 enable = true
 
 [params.widgets]
-homepage = ["recent_posts"]
+homepage = ["home_intro","recent_posts"]
 sidebar = ["about","sidebar_menu","taxonomy_cloud"] # "search"
 footer = ["social_menu"]
 
@@ -116,6 +116,34 @@ name = "Archives"
 weight = 120
 identifier = "archives"
 url = "/post/"
+
+[[menu.home_intro]]
+identifier = "spop"
+name = "spop"
+title = "A Spotify client running as a daemon, similar to mpd."
+url = "https://github.com/Schnouki/spop"
+weight = 10
+
+[[menu.home_intro]]
+identifier = "dotfiles"
+name = "dotfiles"
+title = "Many of my configuration files."
+url = "https://github.com/Schnouki/dotfiles"
+weight = 20
+
+[[menu.home_intro]]
+identifier = "git-annex-remote-hubic"
+name = "git-annex-remote-hubic"
+title = "A git-annex special remote for hubiC"
+url = "https://github.com/Schnouki/git-annex-remote-hubic"
+weight = 30
+
+[[menu.home_intro]]
+identifier = "stibidik"
+name = "STIBIDIK"
+title = "My company 😉"
+url = "https://www.stibidik.fr/"
+weight = 40
 
 [blackfriday]
 hrefTargetBlank = true
