@@ -40,7 +40,7 @@ available on the [AUR][].)
 This record can then be added to the zone on OVH without any problem. By the way, my blog is now secured by DANE and
 TLSA, as demonstrated by the [DNSSEC/TLSA-Validator][validator] Firefox add-on :smiley:
 
-![TLSA FTW!]({static|/images/2014/tlsa-url.png})
+![TLSA FTW!](/img/2014/tlsa-url.png)
 
 **UPDATE:** OVH now supports records with the TLSA type in its new Manager V6 when editing the zone in text mode. So now
 it's possible to use the "RFC" output in `tlsa`:
