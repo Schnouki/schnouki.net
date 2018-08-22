@@ -46,6 +46,7 @@ listDateFormat = "02 Jan 2006"
 archiveDateFormat = "02 Jan"
 hideEntryNavigation = ["page"] # boolean / array of sections
 showReadingTime = true
+showLastMod = true
 taxonomyCloudShuffle = false
 accentColor = "#7b7bde"
 hideMainMenu = true
