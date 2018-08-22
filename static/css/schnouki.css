@@ -30,3 +30,26 @@
         width: calc(50% - 2.5em);
     }
 }
+
+#isso-thread {
+    font-size: .8em;
+}
+#isso-thread .auth-section, #isso-thread .notification-section {
+    font-size: .9em;
+}
+#isso-thread .isso-postbox > .form-wrapper > .auth-section .input-wrapper {
+    margin-right: 5px;
+}
+#isso-thread .isso-postbox > .form-wrapper > .auth-section .post-action > input {
+    padding: .3em;
+    letter-spacing: initial;
+}
+#isso-thread .notification-section label {
+    font-weight: initial;
+    letter-spacing: initial;
+    display: inline-flex;
+}
+#isso-thread .notification-section input {
+    width: initial;
+    margin-right: .5em;
+}

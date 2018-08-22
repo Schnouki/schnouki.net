@@ -5,7 +5,7 @@ copyright = ""
 
 theme = "minimo"
 
-disqusShortname = "devschnouki"
+disqusShortname = ""
 googleAnalytics = ""
 
 paginate = 10
@@ -85,7 +85,12 @@ google_scholar = ""
 youtube = ""
 
 [params.comments]
-enable = false
+enable = true
+
+[params.comments.isso]
+enable = true
+url = "/isso/"
+extra = 'data-isso-require-author="true" data-isso-require-email="true" data-isso-gravatar="true" data-isso-avatar="false" data-isso-feed="true" data-isso-reply-notifications="true"'
 
 [params.search]
 client = "fuse" # algolia / fuse / lunr
