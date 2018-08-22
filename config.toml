@@ -92,7 +92,7 @@ client = "fuse" # algolia / fuse / lunr
 [taxonomies]
 #author = "authors"
 category = "categories"
-series = "series"
+#series = "series"
 tag = "tags"
 
 [permalinks]
