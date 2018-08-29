@@ -23,5 +23,5 @@ _isso-hugo:
 _isso-devd:
 	devd --port 1313 /isso/=https://schnouki.net/isso /=http://localhost:1314
 
-upload: build
+upload: | build
 	rsync -P -rvzc --delete public/ $(UPLOAD_TARGET)
