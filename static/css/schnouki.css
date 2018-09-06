@@ -1,3 +1,6 @@
+/*********************
+ * home_intro widget *
+ *********************/
 .intro-link {
     margin-top: -1.5em;
 }
@@ -31,6 +34,31 @@
     }
 }
 
+/****************
+ * Post content *
+ ****************/
+.code-shortcode .highlight {
+    font-size: .8em;
+    line-height: initial;
+}
+.code-shortcode .highlight pre {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.code-shortcode__link {
+    border: 1px solid #272822;
+    border-bottom: none;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+    padding: 0 1em;
+}
+.code-shortcode__link a {
+    border-bottom: none;
+}
+
+/*****************
+ * Isso comments *
+ *****************/
 #isso-thread {
     font-size: .8em;
 }
