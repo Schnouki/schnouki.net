@@ -1,0 +1,118 @@
+* OTP secrets
+#+TBLNAME: otp-tokens
+| Issuer | Label                  | Secret           | Image      | URI                                                                                                                                             |
+|--------+------------------------+------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Google | fake.address@gmail.com | fakesecret123456 | google.png | otpauth://totp/Google:fake.address@gmail.com?secret=fakesecret123456&issuer=Google&image=https%3A%2F%2Ffichiers.schnouki.net%2Fotp%2Fgoogle.png |
+#+TBLFM: $5='(concat "otpauth://totp/" (if (string-blank-p $1) "" (concat $1 ":")) $2 "?" (url-build-query-string `(("secret" $3) ("issuer" $1) ("image" ,(if (string-blank-p $4) "" (concat "https://fichiers.schnouki.net/otp/" $4))))))
+
+* Configuration QR-codes
+#+name: qrcodes
+#+begin_src python :var tokens=otp-tokens :results output
+import subprocess
+for issuer, label, secret, image, uri in tokens:
+    print("%s (%s)\n" % (label, issuer if len(issuer) > 0 else "n/a"))
+    code = subprocess.check_output(["qrencode", "-t", "UTF8", uri])
+    print(code.decode("utf-8"))
+    print("\n"*30)
+#+end_src
+
+#+RESULTS: qrcodes
+#+begin_example
+fake.address@gmail.com (Google)
+
+█████████████████████████████████████████████████████
+█████████████████████████████████████████████████████
+████ ▄▄▄▄▄ █▀██▄▀█▀▀  ▀▀▄▄▄▀▀█▀▄▀▄▄▀█▄█▀▄█ ▄▄▄▄▄ ████
+████ █   █ █▀▄▀██▄▀█▄  ▄ ▄ █▀ ██▀▀ █  █ ▀█ █   █ ████
+████ █▄▄▄█ █▀▀█▀▄█▄ ▄▀█▄ ▄▄▄ █ █▀██ ▀ ▄▄▄█ █▄▄▄█ ████
+████▄▄▄▄▄▄▄█▄█▄█ ▀▄█ ▀ ▀ █▄█ ▀ ▀ ▀ █ █▄▀▄█▄▄▄▄▄▄▄████
+████  ▄▄▄▀▄  █▄ █▀█▀█▀▀▄▄▄▄  ▀▄██▀  ██▄▀▀ █ █▄▀▄▀████
+█████▀▄▀ █▄▀▄█ ▄  █▀█▀▄▄ ██▀ ▀ ▄  ▀██▄▄ █▀▄█▀▄▄▄█████
+████▀ ██ ▄▄███▄▀█▄▄ ▄ ▄ ▀█ ▀█▄▀▄▄▄▄▀▄ ▀▀▄▄▀▀▄▄ ▀▀████
+████ ██   ▄▄▀█▀▄▄▄ ▀█ ▀ ▄█▀ ▄█▄  ▄ ▄▀█▀▀ ▀ █▀  ▀▄████
+████▄█▀█▀▀▄▀█    ▄▄▄▀▀█ ████  ▄██▀▀▄▀▄█▀▀ ▄█▀ ▀  ████
+█████▄▀▄▄█▄▄█▀▄█▀ ▄▄ █▄▄▀ █▄▀▀▄▄▀▀▀▄ ▄▄ █▄▄█▄█▄▄█████
+████▄▄ ▀ ▄▄▄  █▄ ▄▄▀█▄▄▄ ▄▄▄ █▀▄▄ ▄▀▄▄▀▄ ▄▄▄    █████
+████   ▄ █▄█ ▄█▄▀▀█ ▄▀ ▀ █▄█    ▀▀ █ ▄█▀ █▄█   ▀▄████
+████▀   ▄ ▄▄ █▀▀▄▀█ █▀▀▀ ▄    ▄██  ▀█▀██▄ ▄  ▄█  ████
+████▄▀██▀▀▄▀▀██▀█ ▄▄▀  ▀▄▄█▀▀█ ▀ ▄█ █▀  ▄ ▄█▀▄▄ ▀████
+████▄ █ █▀▄██ ▀▄  ▄█▄ ▄▄▄▀▄  ▄▀▄▄ ▄▀▄▀█▀█▄█ ▄▀▀  ████
+█████ █ ██▄ ▀█   ▄ ▀ ▄ █▄█▄▄▄  ▀ █ █ ▀▀█▄ ▀█ ▀ ▀▄████
+████  █ ▀ ▄▀▀█▀▄ ▄▄▀▀▀█ ▀▀▀█ ▄██▀ ▀ ▀▄▄▄▀▀█▀▀▀▀▄ ████
+█████▀▀▀ █▄▄█ █▄  █▀▀▄ █▄ █▀▀▄ ▀█ █▀▄  █▄ ▄██▄▄▄▀████
+████▄██▄▄█▄▄ ▀▀ █▀▄█▄▀ █ ▄▄▄ ▄▀▄▄█▄▀█ ▀▀ ▄▄▄ ▄█  ████
+████ ▄▄▄▄▄ █▄▀██▄▀█ ▀▀▀▀ █▄█  ▀▀ ▄▀█ ██  █▄█ █ ▀▄████
+████ █   █ █ ▀▄▀▄▀█▀ ▄▀▄▄   ▄ ▄▀█ ▀ █▄▄▄ ▄▄   ▀  ████
+████ █▄▄▄█ █ ▀█▀█ █▀██ ▄▀██▀  ▄ ██▄██▄▄ ▀██ ▀▄▄██████
+████▄▄▄▄▄▄▄█▄█▄█▄▄▄███▄▄█▄▄▄█▄██▄▄▄▄▄▄██▄█▄▄▄█▄▄█████
+█████████████████████████████████████████████████████
+█████████████████████████████████████████████████████
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#+end_example
+
+* Google Authenticator backup
+#+name: google_auth
+#+begin_src sh :results output
+adb shell "su -c \"sqlite3 -line /data/data/com.google.android.apps.authenticator2/databases/databases 'select email, secret, original_name from accounts'\"" | dos2unix
+#+end_src
+
+#+RESULTS: google_auth
+#+begin_example
+        email = fake.address@gmail.com
+       secret = fakesecret123456
+original_name =
+#+end_example
+
+* FreeOTP backup
+#+name: free_otp
+#+begin_src python :results output
+from xml.etree import ElementTree as ET
+import base64, json, subprocess, sys
+
+cmd = ["adb", "shell", 'su -c "cat /data/data/org.fedorahosted.freeotp/shared_prefs/tokens.xml"']
+ret = subprocess.run(cmd, stdout=subprocess.PIPE, check=True)
+root = ET.fromstring(ret.stdout)
+for child in root:
+  name = child.attrib['name']
+  if child.attrib['name'] != 'tokenOrder':
+    data = json.loads(child.text)['secret']
+    data = ''.join('%02x' % (x % 256) for x in data)
+    secret = base64.b32encode(bytes.fromhex(data)).decode('utf-8').rstrip('=').lower()
+    print(name, ' ' * (40 - len(name)), secret)
+#+end_src
+
+#+RESULTS: free_otp
+#+begin_example
+Google:fake.address@gmail.com             fakesecret123456
+#+end_example
