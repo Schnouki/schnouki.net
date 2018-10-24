@@ -11,6 +11,8 @@ tags:
   - security
   - SSL
   - TLSA
+images:
+  - /img/2014/tlsa-url.png
 ---
 
 [DANE][] is a great way of improving security on the web by replacing SSL certificate authorities with DNS records

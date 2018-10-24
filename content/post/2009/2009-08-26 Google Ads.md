@@ -8,6 +8,8 @@ tags:
   - Google
   - ads
   - vampire
+images:
+  - /img/2009/google_adZs_vampire.png
 ---
 
 ![Find Vampire Women in EU](/img/2009/google_adZs_vampire.png)

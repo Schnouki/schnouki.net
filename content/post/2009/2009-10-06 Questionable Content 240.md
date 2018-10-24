@@ -8,6 +8,8 @@ tags:
   - questionable content
   - culture
   - webcomic
+images:
+  - /img/2009/qc240.png
 ---
 
 [![QC240](/img/2009/qc240.png)](http://www.questionablecontent.net/view.php?comic=240)

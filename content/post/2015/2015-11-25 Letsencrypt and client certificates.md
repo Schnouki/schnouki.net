@@ -7,6 +7,9 @@ categories:
 tags:
   - SSL
   - security
+images:
+  - https://letsencrypt.org/certs/isrg-keys.png
+  - https://imgs.xkcd.com/comics/security.png
 ---
 
 A few days ago I switched to [Let's Encrypt][] certificates for this site (instead of StartSSL).

@@ -12,4 +12,4 @@ tags:
 
 {{< youtube oWxtBVT9C_s >}}
 
-I tired emacs and I liked it!
+I tried emacs and I liked it!

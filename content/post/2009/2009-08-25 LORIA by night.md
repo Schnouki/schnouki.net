@@ -7,6 +7,10 @@ categories:
 tags:
   - LORIA
   - night
+images:
+  - /img/2009/loria1.jpg
+  - /img/2009/loria2.jpg
+  - /img/2009/loria3.jpg
 ---
 
 ![Hall](/img/2009/loria1.jpg "Hall")

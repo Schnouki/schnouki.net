@@ -9,6 +9,8 @@ tags:
   - France
   - PhD
   - PHD Comics
+images:
+  - /img/2010/phd1292_1.gif
 ---
 
 This morning I read the [latest *Piled Higher & Deeper*][phd] about *égalité des

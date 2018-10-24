@@ -6,6 +6,8 @@ categories:
   - Media
 tags:
   - internet
+images:
+  - /img/2009/before_the_internet.jpg
 ---
 
 [ ![Before the Inernet...](/img/2009/before_the_internet.jpg) ](http://www.sharesomecandy.com/2009/10/lee-crutchley.html)

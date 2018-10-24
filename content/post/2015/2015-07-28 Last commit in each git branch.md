@@ -7,6 +7,8 @@ categories:
 tags:
   - git
   - zsh
+images:
+  - /img/2015/git-branch-last-commit.png
 ---
 
 At work we're usually working on many [git][] branches at the same time, and from time to time we rebase the

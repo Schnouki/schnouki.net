@@ -13,6 +13,8 @@ tags:
   - chromecast
   - avahi
   - mdns
+images:
+  - /img/2014/chromecast/result.png
 ---
 
 This is a follow-up to the post about [OpenVPN for a single application]({{< relref "2014-12-12 OpenVPN for a single application.md" >}}).
