@@ -1,0 +1,7 @@
+{{- if .Params.cover }}
+{{- $type := ( printf "%T" .Params.cover ) }}
+{{- $isMap := ( not ( eq $type "string" ) ) -}}
+  "image": "{{ if $isMap }}{{ .Params.cover.image | absURL }}{{ else }}{{ .Params.cover | absURL }}{{ end }}",
+{{- else if .Params.images }}
+  "image": "{{ index .Params.images 0 | absURL }}",
+{{- end -}}

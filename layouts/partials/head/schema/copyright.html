@@ -1,0 +1,4 @@
+{{- with .Site.Params.copyright }}
+  "copyrightHolder": "{{ .holder }}",
+  "license": "{{ replaceRE "^(\\pP*\\s*)*" "" (.suffix | plainify | safeHTML) | strings.FirstUpper}}",
+{{- end -}}

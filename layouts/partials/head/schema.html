@@ -1,0 +1,77 @@
+{{/** Sources:
+   * https://code.luasoftware.com/tutorials/hugo/schema-markup-for-hugo/
+   */}}
+{{ if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "{{ .Site.BaseURL }}",
+  "name": "{{ .Site.Title }}",
+  {{- with .Site.Params.info.description }}
+  "description": "{{ . }}",
+  {{- end }}
+  {{- partial "head/schema/author" . }}
+  {{- partial "head/schema/copyright" . }}
+  {{- partial "head/schema/publisher" . }}
+  "hasPart": [
+    {
+      "@context": "http://schema.org/",
+      "@type": "WPHeader",
+      "@id": "#header",
+      "headline": "{{ .Site.Params.info.description }}",
+      "cssSelector": "#header"
+    }, {
+      "@context": "http://schema.org/",
+      "@type": "WPSidebar",
+      "@id": "#sidebar",
+      "cssSelector": "#sidebar",
+      "citation": [
+        {{ range $i, $e := .Site.Menus.main }}{{ if $i }}, {{ end }}"{{ $e.URL | absURL }}"{{ end }}
+      ],
+      "@graph": [
+        {{ range $i, $e := .Site.Menus.main }}{{ if $i }}, {{ end }}{
+          "@context": "https://schema.org",
+          "@type": "SiteNavigationElement",
+          "@id": "#sidebar",
+          "name": "{{ $e.Name }}",
+          "url": "{{ $e.URL | absURL }}"
+        }{{- end -}}
+      ]
+    }, {
+      "@context": "http://schema.org/",
+      "@type": "WPFooter",
+      "cssSelector": "#footer",
+      "@id": "#footer",
+      "copyrightHolder": "{{ .Site.Params.copyright.holder }}",
+      "publisher": "{{ .Site.Params.copyright.holder }}",
+      "copyrightYear": "{{ now.Year }}"
+    }
+  ]
+}
+</script>
+{{- else if .IsPage -}}
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ .Title }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  "genre": "{{ .Type }}",
+  {{ with .Params.tags -}}
+  "keywords": "{{ delimit . ", " }}",
+  {{- end }}
+  "wordcount": {{ .WordCount }},
+  "url": "{{ .Permalink }}",
+  {{- partial "head/schema/date" . }}
+  {{- partial "head/schema/image" . }}
+  {{- partial "head/schema/author" . }}
+  {{- partial "head/schema/copyright" . }}
+  {{- partial "head/schema/publisher" . }}
+  "description": "{{ .Description }}"
+}
+</script>
+{{- end }}

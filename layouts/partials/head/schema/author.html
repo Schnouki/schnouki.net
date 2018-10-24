@@ -1,0 +1,6 @@
+{{- with .Site.Params.copyright }}
+  "author": {
+    "@type": "Person",
+    "name": "{{ .holder }}"
+  },
+{{- end -}}

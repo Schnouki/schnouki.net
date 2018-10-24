@@ -37,7 +37,8 @@ gopher = "/img/gopher.png" # used in 404 template ( Generator: https://gopherize
 prefix = ""
 holder = "Thomas Jost"
 startYear = "2009"
-suffix = """&mdash; licensed under a <a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>."""
+suffix = """— licensed under a <a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>."""
+logo = "/android-chrome-512x512.png"
 
 [params.settings]
 # date & time format: https://golang.org/pkg/time/
