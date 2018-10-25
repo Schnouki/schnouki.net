@@ -3,6 +3,8 @@
 
 UPLOAD_TARGET = ks:/srv/http/schnouki.net/htdocs-hugo
 
+SERVE_OPTS = --buildDrafts --buildFuture --i18n-warnings
+
 help:
 	@echo "Usage:"
 	@echo "  make help             Show this message"
@@ -15,11 +17,11 @@ build:
 	hugo --cleanDestinationDir
 
 serve:
-	hugo serve
+	hugo serve $(SERVE_OPTS)
 
 serve-isso: _isso-hugo _isso-devd
 _isso-hugo:
-	hugo serve --port 1314
+	hugo serve $(SERVE_OPTS) --port 1314
 _isso-devd:
 	devd --port 1313 /isso/=https://schnouki.net/isso /=http://localhost:1314
 
