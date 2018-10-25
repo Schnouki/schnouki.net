@@ -56,6 +56,13 @@
     border-bottom: none;
 }
 
+/***************
+ * Better gist *
+ ***************/
+.gist table, .gist td, .gist th {
+    border: initial;
+}
+
 /*****************
  * Isso comments *
  *****************/
