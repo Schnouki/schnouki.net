@@ -5,6 +5,8 @@ menu:
     weight: -100
 ---
 
+[:fr: Version française]({{<relref "about.fr.md" >}})
+
 I'm Thomas Jost, aka "Schnouki". I'm a French software engineer and full-stack developer.
 
 I love Free Software, GNU/Linux, reading science-fiction books, and watching good TV shows. My text editor is Emacs.
@@ -15,12 +17,14 @@ by [e-mail](mailto:%73%63%68%6E%6F%75%6B%69%2B%62%6C%6F%67%40%73%63%68%6E%6F%75%
 paranoid as I do, be sure to use my [GnuPG key](/files/pubkey-C0478597.asc) (ID: C0478597; I'm also
 on [Keybase](https://keybase.io/schnouki)!).
 
-If you like what's on this blog, you can [flattr it](//flattr.com/thing/32752/devschnouki), or send me a few
-[μBTC](bitcoin:1NNji5k1aj8HnoZucYRN5GkfFw5v5atVJH) or [μLTC](litecoin:LXKARYw25RJEGuW7oqei4aJ169PqTsZLM3).
+If you like what's on this blog, you can send me a few [μBTC](bitcoin:1NNji5k1aj8HnoZucYRN5GkfFw5v5atVJH) or
+[μLTC](litecoin:LXKARYw25RJEGuW7oqei4aJ169PqTsZLM3).
 
 
 Mentions légales / boring French legal stuff
 --------------------------------------------
+
+This is a personal blog. Opinions are my own only.
 
 Ceci est un blog personnel. Les avis publiés sont personnels et n'engagent que moi.
 
