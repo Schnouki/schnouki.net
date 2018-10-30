@@ -1,3 +1,4 @@
+{{- if not .Site.IsServer }}
 <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
 <script type="text/javascript">
 (function(f, a, t, h, o, m){
@@ -13,3 +14,4 @@
 fathom('trackPageview');
 </script>
 <!-- / Fathom -->
+{{- end }}
