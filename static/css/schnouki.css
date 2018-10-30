@@ -88,3 +88,27 @@
     width: initial;
     margin-right: .5em;
 }
+
+/******************
+ * TeX and LaTeX… *
+ ******************/
+/* From https://stackoverflow.com/a/8160532/113325 */
+.tex sub, .latex sub, .latex sup {
+    text-transform: uppercase;
+    top: initial;
+    bottom: initial;
+}
+.tex sub, .latex sub {
+    vertical-align: -0.5ex;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+}
+.tex, .latex, .tex sub, .latex sub {
+    font-size: 1em;
+}
+.latex sup {
+    font-size: 0.85em;
+    vertical-align: 0.15em;
+    margin-left: -0.36em;
+    margin-right: -0.15em;
+}
