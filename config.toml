@@ -23,9 +23,26 @@ defaultContentLanguage = "en"
 
 ignoreFiles = ["/\\.#.+", "~$"]
 
+[languages]
+# edit this block for your own language
+
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
+
+# [languages.fr]
+# lang = "fr"
+# languageName = "Français"
+# weight = 2
+
 [params.info]
 description = "A blog about Emacs, Linux, and other things I care about."
 title404 = "There's nothing here!"
+
+# [languages.fr.params.info]
+# description = "Un blog sur Emacs, Linux, et ce qui me passe par la tête."
+# title404 = "Il n'y a rien à voir ici !"
 
 [params.assets]
 favicon = "favicon.ico"
@@ -39,6 +56,9 @@ holder = "Thomas Jost"
 startYear = "2009"
 suffix = """— licensed under a <a rel="license" href="//creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>."""
 logo = "/android-chrome-512x512.png"
+
+# [languages.fr.params.copyright]
+# suffix = """— mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>."""
 
 [params.settings]
 # date & time format: https://golang.org/pkg/time/
@@ -56,8 +76,8 @@ hideMainMenu = true
 enable = true
 
 [params.widgets]
-homepage = ["home_intro","recent_posts"]
-sidebar = ["about","sidebar_menu","taxonomy_cloud"] # "search"
+homepage = ["home_intro", "recent_posts"]
+sidebar = ["about", "sidebar_menu", "taxonomy_cloud"] # "search"
 footer = ["social_menu"]
 
 [params.opengraph.facebook]
@@ -112,17 +132,35 @@ weight = 100
 identifier = "categories"
 url = "/categories/"
 
+# [[languages.fr.menu.main]]
+# name = "Catégories"
+# weight = 100
+# identifier = "categories"
+# url = "/fr/categories/"
+
 [[menu.main]]
 name = "Tags"
 weight = 110
 identifier = "tags"
 url = "/tags/"
 
+# [[languages.fr.menu.main]]
+# name = "Tags"
+# weight = 110
+# identifier = "tags"
+# url = "/fr/tags/"
+
 [[menu.main]]
 name = "Archives"
 weight = 120
 identifier = "archives"
 url = "/post/"
+
+# [[languages.fr.menu.main]]
+# name = "Archives"
+# weight = 120
+# identifier = "archives"
+# url = "/fr/post/"
 
 [[menu.home_intro]]
 identifier = "spop"
@@ -153,12 +191,7 @@ url = "https://www.stibidik.fr/"
 weight = 40
 
 [blackfriday]
-hrefTargetBlank = true
+hrefTargetBlank = false
 
-[languages]
-# edit this block for your own language
-
-[languages.en]
-lang = "en"
-languageName = "English"
-weight = 1
+# [languages.fr.blackfriday]
+# angledQuotes = true
