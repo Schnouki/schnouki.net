@@ -1,6 +1,10 @@
 <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  {{ if eq "file" . }}
+  {{- if eq "file" . -}}
   <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
   <polyline points="13 2 13 9 20 9"/>
-  {{ end }}
+  {{- else if eq "info" . -}}
+  <circle cx="12" cy="12" r="10"/>
+  <line x1="12" y1="16" x2="12" y2="12"/>
+  <line x1="12" y1="8" x2="12" y2="8"/>
+  {{- end -}}
 </svg>

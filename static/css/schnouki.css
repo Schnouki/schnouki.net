@@ -56,6 +56,39 @@
     border-bottom: none;
 }
 
+.admonition {
+    margin: 0 2em 1.5em 2em;
+}
+
+.admonition.note {
+    display: block;
+    position: relative;
+    border-left-width: .125rem;
+    border-left-style: solid;
+    border-left-color: #ffcd00;
+    border-left-color: var(--color-accent);
+}
+.admonition-icon {
+    font-size: 1.5em;
+    position: absolute;
+    top: 0;
+    left: calc(-0.5em - 1px);
+    background: white;
+}
+.admonition-icon svg {
+    display: block;
+    color: #ffcd00;
+    color: var(--color-accent);
+}
+
+.admonition-content {
+    padding: 1.5em 1em 1em 1em;
+}
+.admonition-content p:last-child {
+    margin-bottom: 0;
+}
+
+
 /***************
  * Better gist *
  ***************/
