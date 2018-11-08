@@ -14,7 +14,7 @@ help:
 	@echo "  make upload           Upload the updated data to the live site"
 
 build:
-	hugo --cleanDestinationDir
+	hugo --cleanDestinationDir --gc
 
 serve:
 	hugo serve $(SERVE_OPTS)

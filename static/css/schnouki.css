@@ -88,6 +88,22 @@
     margin-bottom: 0;
 }
 
+/*****************
+ * Image gallery *
+ *****************/
+.entry-content .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.entry-content .gallery a {
+    border: 0;
+    margin-bottom: .5em;
+}
+.entry-content .gallery img {
+    border: .125em solid #bdbdbd; /* $color_grey */
+}
 
 /***************
  * Better gist *

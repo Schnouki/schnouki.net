@@ -1,3 +1,6 @@
 [submodule "themes/minimo"]
 	path = themes/minimo
 	url = https://github.com/Schnouki/minimo
+[submodule "themes/baguettebox"]
+	path = themes/baguettebox
+	url = https://github.com/Schnouki/hugo-baguetteBox

@@ -3,7 +3,10 @@ title = "/dev/schnouki"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
-theme = "minimo"
+theme = [
+  "baguettebox",
+  "minimo"
+]
 
 disqusShortname = ""
 googleAnalytics = ""
