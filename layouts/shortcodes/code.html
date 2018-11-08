@@ -2,11 +2,18 @@
 {{- $hlLang := .Get 1 -}}
 {{- $hlOptions := .Get 2 -}}
 
-{{- $content := readFile (printf "static/%s" $path) -}}
+{{- $content := "" -}}
+{{- $url := $path | relURL -}}
+{{- $staticPath := (printf "static/%s" $path) -}}
+{{- if (fileExists $staticPath) -}}
+  {{- $content = readFile $staticPath -}}
+{{- else -}}
+  {{- $res := .Page.Resources.GetMatch $path -}}
+  {{- $content = $res.Content -}}
+  {{- $url = $res.RelPermalink -}}
+{{- end -}}
 {{- $components := split $path "/" -}}
 {{- $baseName := index $components (sub (len $components) 1) -}}
-
-{{- $url := $path | relURL -}}
 
 <div class="code-shortcode">
   <div class="code-shortcode__link">
