@@ -19,8 +19,23 @@ Si vous aimez ce blog, vous pouvez m'envoyer quelques [μBTC](bitcoin:1NNji5k1aj
 [μLTC](litecoin:LXKARYw25RJEGuW7oqei4aJ169PqTsZLM3).
 
 
-Mentions légales
-----------------
+## Contact
+
+Il y a *teeeellement* de moyens de me contacter :
+
+- [courriel](mailto:%73%63%68%6E%6F%75%6B%69%2B%62%6C%6F%67%40%73%63%68%6E%6F%75%6B%69%2E%6E%65%74)
+- [Twitter](https://twitter.com/Schnouki)
+- [LinkedIn](https://www.linkedin.com/in/thomasjost/)
+- [Stack Overflow](https://stackoverflow.com/users/113325/schnouki)
+- [GitHub](https://github.com/Schnouki)
+- [GitLab](https://gitlab.com/Schnouki)
+- [Keybase](https://keybase.io/schnouki)
+- @Schnouki sur les communautés Slack [Python Developers](https://pythondev.slack.com/) et [Gophers](https://gophers.slack.com/)
+- [Facebook](https://www.facebook.com/tjost) (à éviter SVP !)
+- ou même par <a href="#" onclick="alert(Si vous voulez mon numéro, il faudra me le demander ;)'); return false">téléphone</a> !
+
+
+## Mentions légales
 
 Ceci est un blog personnel. Les avis publiés sont personnels et n'engagent que moi.
 

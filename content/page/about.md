@@ -21,8 +21,24 @@ If you like what's on this blog, you can send me a few [μBTC](bitcoin:1NNji5k1a
 [μLTC](litecoin:LXKARYw25RJEGuW7oqei4aJ169PqTsZLM3).
 
 
-Mentions légales / boring French legal stuff
---------------------------------------------
+## Contact
+
+There are *sooo* many ways to reach me:
+
+- [e-mail](mailto:%73%63%68%6E%6F%75%6B%69%2B%62%6C%6F%67%40%73%63%68%6E%6F%75%6B%69%2E%6E%65%74)
+- [Twitter](https://twitter.com/Schnouki)
+- [LinkedIn](https://www.linkedin.com/in/thomasjost/)
+- [Stack Overflow](https://stackoverflow.com/users/113325/schnouki)
+- [GitHub](https://github.com/Schnouki)
+- [GitLab](https://gitlab.com/Schnouki)
+- [Keybase](https://keybase.io/schnouki)
+- @Schnouki on the Slack [Python Developers](https://pythondev.slack.com/) and [Gophers](https://gophers.slack.com/) communities
+- [Facebook](https://www.facebook.com/tjost) (but please, don't!)
+- or even <a href="#" onclick="alert('If you want this, you\'ll need to ask for it ;)'); return false">phone</a>!
+
+
+
+## Mentions légales / boring French legal stuff
 
 This is a personal blog. Opinions are my own only.
 
