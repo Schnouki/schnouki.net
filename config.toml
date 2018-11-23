@@ -40,11 +40,11 @@ weight = 1
 # weight = 2
 
 [params.info]
-description = "A blog about Emacs, Linux, and other things I care about."
+description = "Software engineer, full-stack developer. Addicted to Python, Go, Emacs and Linux. I love sci-fi and want Firefly to be real."
 title404 = "There's nothing here!"
 
 # [languages.fr.params.info]
-# description = "Un blog sur Emacs, Linux, et ce qui me passe par la tête."
+# description = "Ingénieur logiciel, développeur full-stack. Passionné de Python, Go, Emacs et Linux. Fan de science-fiction, rêve que Firefly soit réel."
 # title404 = "Il n'y a rien à voir ici !"
 
 [params.assets]
