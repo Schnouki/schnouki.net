@@ -27,6 +27,7 @@ There are *sooo* many ways to reach me:
 
 - [e-mail](mailto:%73%63%68%6E%6F%75%6B%69%2B%62%6C%6F%67%40%73%63%68%6E%6F%75%6B%69%2E%6E%65%74)
 - [Twitter](https://twitter.com/Schnouki)
+- [Mastodon](https://mastodon.xyz/@schnouki)
 - [LinkedIn](https://www.linkedin.com/in/thomasjost/)
 - [Stack Overflow](https://stackoverflow.com/users/113325/schnouki)
 - [GitHub](https://github.com/Schnouki)
