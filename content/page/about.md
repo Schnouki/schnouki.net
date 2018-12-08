@@ -12,6 +12,8 @@ I'm Thomas Jost, aka "Schnouki". I'm a French software engineer and full-stack d
 I love Free Software, GNU/Linux, reading science-fiction books, and watching good TV shows. My text editor is Emacs.
 Most of the time I hack in Python, except when I feel like writing some Go.
 
+Want to learn more about me? Here's my [résumé](/files/CV Thomas Jost.en.pdf). If you ask nicely, maybe you can even hire me!
+
 You can contact me here by commenting on a post, or
 by [e-mail](mailto:%73%63%68%6E%6F%75%6B%69%2B%62%6C%6F%67%40%73%63%68%6E%6F%75%6B%69%2E%6E%65%74). If you feel as
 paranoid as I do, be sure to use my [GnuPG key](/files/pubkey-C0478597.asc) (ID: C0478597; I'm also
