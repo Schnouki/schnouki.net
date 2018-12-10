@@ -6,7 +6,7 @@ logo = "/img/thomas-200.png"
 [recent_posts]
 title = ""
 length = 5
-excludeTypes = ["page"]
+excludeTypes = ["page", "portfolio"]
 
 [search]
 title = "Search"

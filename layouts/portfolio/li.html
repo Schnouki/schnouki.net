@@ -1,0 +1,10 @@
+<li class='item'>
+  <a class='portfolio-cover' href="{{ .Permalink | relURL }}" title="{{ .Title }}"
+     {{- if .Params.cover }} style="background-image: url({{ (.Resources.GetMatch .Params.cover).RelPermalink }})"{{ end }}>
+    &nbsp;
+  </a>
+  <div class='item-header'>
+    <h3 class='item-title'><a href='{{ .Permalink | relURL }}'>{{ .Title }}</a></h3>
+    <div class="portfolio-summary">{{ .Summary }}</div>
+  </div>
+</li>
