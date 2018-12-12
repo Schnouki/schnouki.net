@@ -1,4 +1,4 @@
-.PHONY: help build serve serve-isso upload
+.PHONY: help build build-clean serve serve-isso upload
 .PHONY: _isso-hugo _isso-devd
 
 UPLOAD_TARGET = ks:/srv/http/schnouki.net/htdocs-hugo
@@ -9,11 +9,15 @@ help:
 	@echo "Usage:"
 	@echo "  make help             Show this message"
 	@echo "  make build            Build the site"
+	@echo "  make build-clean      Build the site, cleaning unused cache files"
 	@echo "  make serve            Serve the site locally"
 	@echo "  make -j serve-isso    Serve the site locally, enabling Isso"
 	@echo "  make upload           Upload the updated data to the live site"
 
 build:
+	hugo --cleanDestinationDir
+
+build-clean:
 	hugo --cleanDestinationDir --gc
 
 serve:
