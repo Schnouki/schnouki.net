@@ -1,4 +1,5 @@
 ---
+date: 2018-12-14
 title: "Open Source software"
 weight: 201401
 ---

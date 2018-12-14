@@ -1,4 +1,5 @@
 ---
+date: 2018-12-14
 title: "Findspire"
 weight: 201608
 cover: logo.png

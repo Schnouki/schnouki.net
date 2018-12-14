@@ -1,4 +1,5 @@
 ---
+date: 2018-12-14
 title: "Buddycloud"
 weight: 201305
 cover: buddycloud.png

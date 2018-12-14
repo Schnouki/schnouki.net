@@ -1,4 +1,5 @@
 ---
+date: 2018-12-14
 title: "STIBIDIK"
 weight: 201810
 cover: logo.png
