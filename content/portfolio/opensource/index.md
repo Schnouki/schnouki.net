@@ -58,8 +58,9 @@ website generator (used on this blog).
 - [collectd][]: the system statistics collection daemon. Fixed the Chrony (NTP server) module.
 - [glib][]: core application building blocks for libraries and applications written in C. Submitted a patch for
   `gdbus-codegen`, a tool that generates DBus bindings from a DBus XML schema, to add support for the
-  `Property.EmitsChangedSignal` annotation (which was needed by spop). After 6 years, it looks like this patch is [about
-  to be merged](https://gitlab.gnome.org/GNOME/glib/merge_requests/532).
+  `Property.EmitsChangedSignal` annotation (which was needed by spop). It took 6 years and a migration from Bugzilla to
+  GitLab for this patch to be merged :smile: ([original issue](https://bugzilla.gnome.org/show_bug.cgi?id=674913),
+  [final merge request](https://gitlab.gnome.org/GNOME/glib/merge_requests/532)).
 - [raven-go](https://github.com/Schnouki/raven-go): Sentry client in Go. Submitted a Pull Request to make reported stack
   traces more useful in environments with different build and runtime locations, such as Heroku. Not merged yet.
 - [healthchecks.io][]: a Cron Monitoring Tool written in Python & Django. Added support for the [PushOver][] service for
