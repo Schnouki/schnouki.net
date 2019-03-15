@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Upgrade
+Operation = Remove
+Type = Package
+Target = linux
+Target = linux-*
+
+[Action]
+Description = Archive the modules of the currently running kernel
+When = PreTransaction
+Exec = /usr/local/bin/keep_kernel_modules.sh
