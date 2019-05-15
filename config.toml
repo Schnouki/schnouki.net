@@ -80,6 +80,7 @@ hideMainMenu = true
 enable = true
 
 [params.widgets]
+header = [] # "breadcrumbs"
 homepage = ["home_intro", "recent_posts"]
 sidebar = ["about", "sidebar_menu", "taxonomy_cloud"] # "search"
 footer = ["social_menu"]
