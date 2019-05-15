@@ -5,7 +5,8 @@ language: fr
 
 [:gb::us: English version]({{< relref "about.md" >}})
 
-Je m'appelle Thomas Jost, alias "Schnouki". Je suis ingénieur logiciel et développeur *full stack*.
+Je m'appelle Thomas Jost, alias "Schnouki". Je suis ingénieur logiciel et développeur *full stack*. Je travaille actuellement pour [Doist](https://doist.com), créateur de [Todoist](https://todoist.com/) et
+[Twist](https://twist.com/).
 
 J'aime le Logiciel Libre, GNU/Linux, les livres de science-fiction, et regarder de bonnes séries. Mon éditeur de texte
 est Emacs. La plupart du temps je bricole en Python, sauf quand j'ai envie de faire du Go.

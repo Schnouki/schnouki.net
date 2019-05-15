@@ -26,7 +26,7 @@ shuffle = false
 
 [home_intro]
 title = "About me"
-text = """Hi there! I'm Thomas Jost, aka "Schnouki". I'm a French software engineer and full-stack developer, and this is my personal blog."""
+text = """Hi there! I'm Thomas Jost, aka "Schnouki". I'm a French software engineer and full-stack developer, currently working as a back-end developer at [Doist](https://doist.com/), and this is my personal blog."""
 linkURL = "/about-me/"
 linkText = "→ Details"
 

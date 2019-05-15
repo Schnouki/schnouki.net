@@ -7,7 +7,9 @@ menu:
 
 [:fr: Version française]({{<relref "about.fr.md" >}})
 
-I'm Thomas Jost, aka "Schnouki". I'm a French software engineer and full-stack developer.
+I'm Thomas Jost, aka "Schnouki". I'm a French software engineer and full-stack developer. I'm currently working as a
+back-end developer at [Doist](https://doist.com), creator of [Todoist](https://todoist.com/) and
+[Twist](https://twist.com/).
 
 I love Free Software, GNU/Linux, reading science-fiction books, and watching good TV shows. My text editor is Emacs.
 Most of the time I hack in Python, except when I feel like writing some Go.

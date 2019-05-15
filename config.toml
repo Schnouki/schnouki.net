@@ -188,11 +188,18 @@ url = "https://github.com/Schnouki/git-annex-remote-hubic"
 weight = 30
 
 [[menu.home_intro]]
+identifier = "doist"
+name = "Doist"
+title = "My current employer, creator of [Todoist](https://todoist.com/) and [Twist](https://twist.com/)"
+url = "https://doist.com/"
+weight = 40
+
+[[menu.home_intro]]
 identifier = "stibidik"
 name = "STIBIDIK"
-title = "My company 😉"
+title = "My (previous) company"
 url = "https://www.stibidik.fr/"
-weight = 40
+weight = 50
 
 [blackfriday]
 hrefTargetBlank = false

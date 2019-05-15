@@ -7,7 +7,7 @@
 <section class='widget widget-home_intro sep-after'>
   <div class="intro-text">
     <h4 class="title widget-title">{{ $config.title }}</h4>
-    <p>{{ $config.text }}</p>
+    <p>{{ $config.text | markdownify }}</p>
     {{- if $config.linkURL }}
     <div class="intro-link">
       <a href="{{ $config.linkURL }}">{{ $config.linkText }}</a>
@@ -22,7 +22,7 @@
       {{- range $items -}}
       <li>
         <a href="{{ .URL }}">{{ .Name }}</a>
-        <span class="intro-menu-desc">{{ .Title }}</span>
+        <span class="intro-menu-desc">{{ .Title | markdownify }}</span>
       </li>
       {{- end -}}
     </ul>
