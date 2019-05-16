@@ -11,9 +11,9 @@
   {{- with .Site.Params.info.description }}
   "description": "{{ . }}",
   {{- end }}
-  {{- partial "head/schema/author" . }}
-  {{- partial "head/schema/copyright" . }}
-  {{- partial "head/schema/publisher" . }}
+  {{- partial "head/schema/author" . | safeJS }}
+  {{- partial "head/schema/copyright" . | safeJS }}
+  {{- partial "head/schema/publisher" . | safeJS }}
   "hasPart": [
     {
       "@context": "http://schema.org/",
@@ -66,11 +66,11 @@
   {{- end }}
   "wordcount": {{ .WordCount }},
   "url": "{{ .Permalink }}",
-  {{- partial "head/schema/date" . }}
-  {{- partial "head/schema/image" . }}
-  {{- partial "head/schema/author" . }}
-  {{- partial "head/schema/copyright" . }}
-  {{- partial "head/schema/publisher" . }}
+  {{- partial "head/schema/date" . | safeJS }}
+  {{- partial "head/schema/image" . | safeJS }}
+  {{- partial "head/schema/author" . | safeJS }}
+  {{- partial "head/schema/copyright" . | safeJS }}
+  {{- partial "head/schema/publisher" . | safeJS }}
   "description": "{{ .Description }}"
 }
 </script>
