@@ -1,6 +1,6 @@
 {{- with .Site.Params.copyright }}
   "author": {
     "@type": "Person",
-    "name": "{{ .holder }}"
+    "name": {{ .holder | jsonify }}
   },
 {{- end -}}

@@ -1,10 +1,10 @@
 {{- with .Site.Params.copyright }}
   "publisher": {
     "@type": "Organization",
-    "name": "{{ .holder }}",
+    "name": {{ .holder | jsonify }},
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ .logo | absURL }}"
+      "url": {{ .logo | absURL | jsonify }}
     }
   },
 {{- end -}}

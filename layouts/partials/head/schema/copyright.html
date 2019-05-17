@@ -1,4 +1,4 @@
 {{- with .Site.Params.copyright }}
-  "copyrightHolder": "{{ .holder }}",
-  "license": "{{ replaceRE "^(\\pP*\\s*)*" "" (.suffix | plainify | safeHTML) | strings.FirstUpper}}",
+  "copyrightHolder": {{ .holder | jsonify }},
+  "license": {{ replaceRE "^(\\pP*\\s*)*" "" (.suffix | plainify | safeHTML) | strings.FirstUpper | jsonify}},
 {{- end -}}

@@ -6,10 +6,10 @@
 {
   "@context": "http://schema.org",
   "@type": "WebSite",
-  "url": "{{ .Site.BaseURL }}",
-  "name": "{{ .Site.Title }}",
+  "url": {{ .Site.BaseURL | jsonify | safeJS }},
+  "name": {{ .Site.Title | jsonify | safeJS }},
   {{- with .Site.Params.info.description }}
-  "description": "{{ . }}",
+  "description": {{ . | jsonify | safeJS }},
   {{- end }}
   {{- partial "head/schema/author" . | safeJS }}
   {{- partial "head/schema/copyright" . | safeJS }}
@@ -19,7 +19,7 @@
       "@context": "http://schema.org/",
       "@type": "WPHeader",
       "@id": "#header",
-      "headline": "{{ .Site.Params.info.description }}",
+      "headline": {{ .Site.Params.info.description | jsonify | safeJS }},
       "cssSelector": "#header"
     }, {
       "@context": "http://schema.org/",
@@ -27,15 +27,15 @@
       "@id": "#sidebar",
       "cssSelector": "#sidebar",
       "citation": [
-        {{ range $i, $e := .Site.Menus.main }}{{ if $i }}, {{ end }}"{{ $e.URL | absURL }}"{{ end }}
+        {{ range $i, $e := .Site.Menus.main }}{{ if $i }}, {{ end }}{{ $e.URL | absURL | jsonify | safeJS }}{{ end }}
       ],
       "@graph": [
         {{ range $i, $e := .Site.Menus.main }}{{ if $i }}, {{ end }}{
           "@context": "https://schema.org",
           "@type": "SiteNavigationElement",
           "@id": "#sidebar",
-          "name": "{{ $e.Name }}",
-          "url": "{{ $e.URL | absURL }}"
+          "name": {{ $e.Name | jsonify | safeJS }},
+          "url": {{ $e.URL | absURL | jsonify | safeJS }}
         }{{- end -}}
       ]
     }, {
@@ -43,9 +43,9 @@
       "@type": "WPFooter",
       "cssSelector": "#footer",
       "@id": "#footer",
-      "copyrightHolder": "{{ .Site.Params.copyright.holder }}",
-      "publisher": "{{ .Site.Params.copyright.holder }}",
-      "copyrightYear": "{{ now.Year }}"
+      "copyrightHolder": {{ .Site.Params.copyright.holder | jsonify | safeJS }},
+      "publisher": {{ .Site.Params.copyright.holder | jsonify | safeJS }},
+      "copyrightYear": {{ now.Year | jsonify | safeJS }}
     }
   ]
 }
@@ -55,23 +55,23 @@
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
-  "headline": "{{ .Title }}",
+  "headline": {{ .Title | jsonify | safeJS }},
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
+    "@id": {{ .Permalink | jsonify | safeJS }}
   },
-  "genre": "{{ .Type }}",
+  "genre": {{ .Type | jsonify | safeJS }},
   {{ with .Params.tags -}}
-  "keywords": "{{ delimit . ", " }}",
+  "keywords": {{ delimit . ", " | jsonify | safeJS }},
   {{- end }}
-  "wordcount": {{ .WordCount }},
-  "url": "{{ .Permalink }}",
+  "wordcount": {{ .WordCount | jsonify | safeJS }},
+  "url": {{ .Permalink | jsonify | safeJS }},
   {{- partial "head/schema/date" . | safeJS }}
   {{- partial "head/schema/image" . | safeJS }}
   {{- partial "head/schema/author" . | safeJS }}
   {{- partial "head/schema/copyright" . | safeJS }}
   {{- partial "head/schema/publisher" . | safeJS }}
-  "description": "{{ .Description }}"
+  "description": {{ .Description | jsonify | safeJS }}
 }
 </script>
 {{- end }}
