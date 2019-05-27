@@ -3,75 +3,10 @@
    */}}
 {{ if .IsHome -}}
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "url": {{ .Site.BaseURL | jsonify | safeJS }},
-  "name": {{ .Site.Title | jsonify | safeJS }},
-  {{- with .Site.Params.info.description }}
-  "description": {{ . | jsonify | safeJS }},
-  {{- end }}
-  {{- partial "head/schema/author" . | safeJS }}
-  {{- partial "head/schema/copyright" . | safeJS }}
-  {{- partial "head/schema/publisher" . | safeJS }}
-  "hasPart": [
-    {
-      "@context": "http://schema.org/",
-      "@type": "WPHeader",
-      "@id": "#header",
-      "headline": {{ .Site.Params.info.description | jsonify | safeJS }},
-      "cssSelector": "#header"
-    }, {
-      "@context": "http://schema.org/",
-      "@type": "WPSidebar",
-      "@id": "#sidebar",
-      "cssSelector": "#sidebar",
-      "citation": [
-        {{ range $i, $e := .Site.Menus.main }}{{ if $i }}, {{ end }}{{ $e.URL | absURL | jsonify | safeJS }}{{ end }}
-      ],
-      "@graph": [
-        {{ range $i, $e := .Site.Menus.main }}{{ if $i }}, {{ end }}{
-          "@context": "https://schema.org",
-          "@type": "SiteNavigationElement",
-          "@id": "#sidebar",
-          "name": {{ $e.Name | jsonify | safeJS }},
-          "url": {{ $e.URL | absURL | jsonify | safeJS }}
-        }{{- end -}}
-      ]
-    }, {
-      "@context": "http://schema.org/",
-      "@type": "WPFooter",
-      "cssSelector": "#footer",
-      "@id": "#footer",
-      "copyrightHolder": {{ .Site.Params.copyright.holder | jsonify | safeJS }},
-      "publisher": {{ .Site.Params.copyright.holder | jsonify | safeJS }},
-      "copyrightYear": {{ now.Year | jsonify | safeJS }}
-    }
-  ]
-}
+{{- partial "head/schema/schema_home" . | safeJS }}
 </script>
 {{- else if .IsPage -}}
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "BlogPosting",
-  "headline": {{ .Title | jsonify | safeJS }},
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": {{ .Permalink | jsonify | safeJS }}
-  },
-  "genre": {{ .Type | jsonify | safeJS }},
-  {{ with .Params.tags -}}
-  "keywords": {{ delimit . ", " | jsonify | safeJS }},
-  {{- end }}
-  "wordcount": {{ .WordCount | jsonify | safeJS }},
-  "url": {{ .Permalink | jsonify | safeJS }},
-  {{- partial "head/schema/date" . | safeJS }}
-  {{- partial "head/schema/image" . | safeJS }}
-  {{- partial "head/schema/author" . | safeJS }}
-  {{- partial "head/schema/copyright" . | safeJS }}
-  {{- partial "head/schema/publisher" . | safeJS }}
-  "description": {{ .Description | jsonify | safeJS }}
-}
+{{- partial "head/schema/schema_page" . | safeJS }}
 </script>
 {{- end }}

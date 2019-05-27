@@ -1,0 +1,21 @@
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ .Title | jsonify }},
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ .Permalink | jsonify }}
+  },
+  "genre": {{ .Type | jsonify }},
+  {{ with .Params.tags -}}
+  "keywords": {{ delimit . ", " | jsonify }},
+  {{- end }}
+  "wordcount": {{ .WordCount | jsonify }},
+  "url": {{ .Permalink | jsonify }},
+  {{- partial "head/schema/date" . }}
+  {{- partial "head/schema/image" . }}
+  {{- partial "head/schema/author" . }}
+  {{- partial "head/schema/copyright" . }}
+  {{- partial "head/schema/publisher" . }}
+  "description": {{ .Description | jsonify }}
+}

@@ -1,0 +1,46 @@
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": {{ .Site.BaseURL | jsonify }},
+  "name": {{ .Site.Title | jsonify }},
+  {{- with .Site.Params.info.description }}
+  "description": {{ . | jsonify }},
+  {{- end }}
+  {{- partial "head/schema/author" . }}
+  {{- partial "head/schema/copyright" . }}
+  {{- partial "head/schema/publisher" . }}
+  "hasPart": [
+    {
+      "@context": "http://schema.org/",
+      "@type": "WPHeader",
+      "@id": "#header",
+      "headline": {{ .Site.Params.info.description | jsonify }},
+      "cssSelector": "#header"
+    }, {
+      "@context": "http://schema.org/",
+      "@type": "WPSidebar",
+      "@id": "#sidebar",
+      "cssSelector": "#sidebar",
+      "citation": [
+        {{ range $i, $e := .Site.Menus.main }}{{ if $i }}, {{ end }}{{ $e.URL | absURL | jsonify }}{{ end }}
+      ],
+      "@graph": [
+        {{ range $i, $e := .Site.Menus.main }}{{ if $i }}, {{ end }}{
+          "@context": "https://schema.org",
+          "@type": "SiteNavigationElement",
+          "@id": "#sidebar",
+          "name": {{ $e.Name | jsonify }},
+          "url": {{ $e.URL | absURL | jsonify }}
+        }{{- end -}}
+      ]
+    }, {
+      "@context": "http://schema.org/",
+      "@type": "WPFooter",
+      "cssSelector": "#footer",
+      "@id": "#footer",
+      "copyrightHolder": {{ .Site.Params.copyright.holder | jsonify }},
+      "publisher": {{ .Site.Params.copyright.holder | jsonify }},
+      "copyrightYear": {{ now.Year | jsonify }}
+    }
+  ]
+}
