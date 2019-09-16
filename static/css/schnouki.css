@@ -92,6 +92,10 @@
     margin-bottom: 0;
 }
 
+.footnotes li p:only-of-type {
+    display: inline;
+}
+
 /*****************
  * Image gallery *
  *****************/
