@@ -1,0 +1,15 @@
+image: archlinux
+packages:
+  - hugo
+  - make
+  - rsync
+sources:
+  - https://github.com/Schnouki/schnouki.net
+environment:
+  BLOG_HOST: schnouki.net
+secrets:
+  - cbdbfd58-46d3-4abb-abe1-3eed67fe6ec0
+tasks:
+  - build_and_deploy: |
+      cd schnouki.net
+      make build upload
