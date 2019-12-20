@@ -62,12 +62,20 @@ same time.
 
 [Amazon S3]: https://aws.amazon.com/fr/s3/
 [Ampersand.js]: https://ampersandjs.com/
+[DigitalOcean]: https://www.digitalocean.com/
 [Django]: https://www.djangoproject.com/
+[Docker Swarm]: https://dockerswarm.rocks/
+[Docker]: https://www.docker.com/
 [Elasticsearch]: https://www.elastic.co/products/elasticsearch
 [Gin]: https://gin-gonic.github.io/
+[Gitlab CI]: https://about.gitlab.com/product/continuous-integration/
 [Go]: https://golang.org/
 [Heroku]: https://www.heroku.com/
 [Mailjet]: https://www.mailjet.com/
 [Oscar]: https://github.com/django-oscar/django-oscar
 [PostgreSQL]: https://www.postgresql.org/
 [Redis]: https://redis.io/
+[Shopify]: https://www.shopify.com/
+[Tampermonkey]: https://www.tampermonkey.net/
+[VueJS]: https://vuejs.org/
+[fabric]: https://www.fabfile.org/
