@@ -43,3 +43,6 @@ with boom:
 
 For extra fun, I added a calls counter. Know I know that in my case, collecting the test cases + running a single tests
 caused `boom()` to be called 1,125,545 times :sweat_smile:
+
+
+[pytest]: https://docs.pytest.org/en/latest/

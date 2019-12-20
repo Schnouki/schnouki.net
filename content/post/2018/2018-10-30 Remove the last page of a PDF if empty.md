@@ -45,5 +45,5 @@ mrproper:
 This uses `stapler`, `awk`, `tr`, `pdfinfo` and `pdftotext`. On Arch Linux, you can find them with the `coreutils`,
 `gawk`, `poppler` and `aur/stapler` packages.
 
-[^1]: I mean, LaTeX, or <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>, or whatever.
 [stapler]: https://github.com/hellerbarde/stapler
+[^1]: I mean, LaTeX, or <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span>, or whatever.
