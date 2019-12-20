@@ -26,7 +26,7 @@ def main():
             content_title = f"{mtch.group(1)}/{content_title}"
 
     yes_no_completer = WordCompleter(["yes", "no"])
-    as_dir = prompt("Create as a directory? (yes/no) ",  completer=yes_no_completer) == "yes"
+    as_dir = prompt("Create as a directory? (yes/no) ", completer=yes_no_completer) == "yes"
     dir_suffix = "/index" if as_dir else ""
 
     path = f"content/{content_type}/{content_title}{dir_suffix}.md"

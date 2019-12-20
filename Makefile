@@ -1,7 +1,8 @@
 .PHONY: help build build-clean serve serve-isso upload
 .PHONY: _isso-hugo _isso-devd
 
-UPLOAD_TARGET = ks:/srv/http/schnouki.net/htdocs-hugo
+BLOG_HOST ?= ks
+UPLOAD_TARGET = $(BLOG_HOST):/srv/http/schnouki.net/htdocs-hugo
 
 SERVE_OPTS = --buildDrafts --buildFuture --i18n-warnings
 
@@ -30,4 +31,4 @@ _isso-devd:
 	devd --port 1313 /isso/=https://schnouki.net/isso /=http://localhost:1314
 
 upload: | build
-	rsync -P -rvzc --delete public/ $(UPLOAD_TARGET)
+	rsync -crvzP --delete public/ $(UPLOAD_TARGET)
