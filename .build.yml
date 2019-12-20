@@ -1,12 +1,12 @@
-image: archlinux
+image: alpine/edge
 packages:
   - hugo
-  - make
   - rsync
 sources:
   - https://github.com/Schnouki/schnouki.net
 environment:
-  BLOG_HOST: schnouki.net
+  DEPLOY_HOST: schnouki@schnouki.net
+  DEPLOY_PATH: /
 secrets:
   - cbdbfd58-46d3-4abb-abe1-3eed67fe6ec0
 tasks:
