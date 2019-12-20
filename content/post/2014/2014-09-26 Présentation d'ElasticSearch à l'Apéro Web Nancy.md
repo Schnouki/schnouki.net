@@ -23,7 +23,7 @@ partir des API Google Places et BreweryDB.
 Tous les détails sur comment faire sont dans le [README][]. La première étape est donc un petit `git clone
 https://code.schnouki.net/schnouki/aperoweb-es.git` 🙂
 
-Les slides sont aussi disponibles en [PDF](/files/2014/Jouons un peu avec ElasticSearch.pdf).
+Les slides sont aussi disponibles en [PDF](</files/2014/Jouons un peu avec ElasticSearch.pdf>).
 
 *Happy hacking*, et n'hésitez pas à me contacter si vous avez des questions :wink:
 

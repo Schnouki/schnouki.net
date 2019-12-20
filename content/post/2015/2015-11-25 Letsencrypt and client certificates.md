@@ -62,7 +62,7 @@ To be honest, it's actually probably not a big deal, and I'm sure that it would 
 lighttpd to do that. But it's still a little bit more complicated than the private CA, for no practical advantage. And
 you'd have to completely *trust* the CA, which can sometimes be [complicated][CA compromise].
 
-[![XKCD 538](//imgs.xkcd.com/comics/security.png "Actual actual reality: nobody cares about his secrets. %28Also, I would be hard-pressed to find that wrench for $5.%29")](https://xkcd.com/538/)
+[![Actual actual reality: nobody cares about his secrets. (Also, I would be hard-pressed to find that wrench for $5)](//imgs.xkcd.com/comics/security.png "XKCD 538")](https://xkcd.com/538/)
 
 [CA compromise]: https://en.wikipedia.org/wiki/Certificate_authority#CA_compromise
 [fallback]: /posts/2014/08/13/basic-auth-ssl-client-certificate-dual-method-authentication-in-lighttpd/

@@ -26,6 +26,9 @@ defaultContentLanguage = "en"
 
 ignoreFiles = ["/\\.#.+", "~$"]
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [languages]
 # edit this block for your own language
 
@@ -203,9 +206,3 @@ name = "STIBIDIK"
 title = "My (previous) company"
 url = "https://www.stibidik.fr/"
 weight = 50
-
-[blackfriday]
-hrefTargetBlank = false
-
-# [languages.fr.blackfriday]
-# angledQuotes = true
