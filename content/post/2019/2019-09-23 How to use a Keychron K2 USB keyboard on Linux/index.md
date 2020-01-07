@@ -1,6 +1,8 @@
 ---
 date: "2019-09-23T23:41:00+02:00"
-title: How to use a Keychron K2 USB keyboard on Linux
+lastmod: "2020-01-07T15:35:34+02:00"
+title: How to use a Keychron K2/K4 USB keyboard on Linux
+slug: how-to-use-a-keychron-k2-usb-keyboard-on-linux
 categories:
   - Software
 tags:
@@ -62,3 +64,7 @@ And added this to my `~/.xinitrc`:
 There's also a list of resources for Keychron K2 Linux users in [this Git
 repo](https://github.com/Kurgol/keychron/blob/master/k2.md), and on Facebook Keychron created a [Keychron Linux User
 Group](https://www.facebook.com/groups/Keychronlinux/).
+
+---
+
+**EDIT:** everything in this post also applies to the Keychron K4 keyboard.
