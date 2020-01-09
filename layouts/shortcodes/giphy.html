@@ -1,0 +1,8 @@
+{{- $code := (.Get 0) -}}
+{{- $posterURL := (printf "https://media.giphy.com/media/%s/200_s.gif" $code) -}}
+{{- $gifURL := (printf "https://media.giphy.com/media/%s/giphy.gif" $code) -}}
+{{- $mp4URL := (printf "https://media.giphy.com/media/%s/giphy.mp4" $code) -}}
+<p><video class="giphy" poster="{{ $posterURL }}" autoplay loop muted playsinline>
+    <source src="{{ $mp4URL }}" type="video/mp4" />
+    <img src="{{ $gifURL }}" />
+</video></p>
