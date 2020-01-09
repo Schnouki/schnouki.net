@@ -1,0 +1,11 @@
+[bookISBN]
+other = "ISBN:"
+
+[bookRating]
+other = "Rating:"
+
+[bookLinks]
+other = "Find this book:"
+
+[bookReview]
+other = "Book review:"

@@ -1,0 +1,8 @@
+{{ $contentPartial := printf "entry/content.%s.html" .Page.Type -}}
+{{ if templates.Exists ( printf "partials/%s" $contentPartial ) -}}
+  {{ partial $contentPartial . -}}
+{{ else -}}
+<div class='container entry-content'>
+  {{ .Content }}
+</div>
+{{ end }}

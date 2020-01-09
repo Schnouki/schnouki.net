@@ -1,0 +1,32 @@
+<div class="container entry-content book" itemscope itemtype="http://schema.org/Book">
+  <div class="book__header">
+    <img class="book__cover" itemprop="image" src="{{ .Page.Params.book.cover }}" />
+    <div class="book__meta">
+      <div class="book_lang">{{ emojify ( printf ":%s:" .Page.Params.book.language ) }}</div>
+      <div class="book__title" itemprop="name">{{ .Page.Params.book.title }}</div>
+      <div class="book__author" itemprop="author">{{ .Page.Params.book.author }}</div>
+      <div class="book__rating">{{ T "bookRating" }}
+          {{ range first .Page.Params.book.stars (seq 5) }}★{{ end -}}
+          {{ range after .Page.Params.book.stars (seq 5) }}☆{{ end }}
+      </div>
+      <meta itemprop="inLanguage" content="{{ .Page.Params.book.language | replaceRE "(gb|uk|us)" "en" }}" />
+      <div class="book__links">{{ T "bookLinks" }}
+        <ul>
+          <li><a href="https://www.goodreads.com/search?q={{ .Page.Params.book.isbn }}">GoodReads</a></li>
+          <li><a href="https://www.amazon.fr/s?k={{ .Page.Params.book.isbn }}">Amazon</a></li>
+        </ul>
+      </div>
+      <div class="book__isbn">{{ T "bookISBN" }} <span itemprop="isbn">{{ .Page.Params.book.isbn }}</span></div>
+    </div>
+  </div>
+  <hr/>
+  <div itemprop="review" itemscope itemtype="http://schema.org/Review">
+    <meta itemprop="author" content="Schnouki" />
+    <div class="hidden" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+      <meta itemprop="ratingValue" content="{{ .Page.Params.book.stars }}"/>
+    </div>
+    <div class="book__review" itemprop="reviewBody">
+      {{ .Content }}
+    </div>
+  </div>
+</div>

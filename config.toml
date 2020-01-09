@@ -134,6 +134,7 @@ tag = "tags"
 
 [permalinks]
 post = "/post/:year/:slug/"
+book-review = "/book-review/:year/:slug/"
 page = "/:slug/"
 
 [[menu.main]]

@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 /*********************
  * home_intro widget *
  *********************/
@@ -186,4 +190,35 @@
 }
 .portfolio.list .item-title {
     font-size: 1.5em;
+}
+
+/***************
+ * Book review *
+ ***************/
+.book__header {
+    display: flex;
+}
+.book__cover {
+    max-width: 40%;
+    max-height: 15em;
+}
+.book__meta {
+    flex-grow: 1;
+    margin-left: 1em;
+}
+.book_lang {
+    font-size: 1.5em;
+    float: right;
+}
+.book__title {
+    font-weight: bold;
+}
+.book__author {
+    font-style: italic;
+}
+.book__rating {
+  margin-bottom: 1em;
+}
+.book__isbn {
+    font-size: .8em;
 }

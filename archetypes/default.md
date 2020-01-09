@@ -1,6 +1,6 @@
 ---
 date: "{{ .Date }}"
-title: "{{ replaceRE "^\\d+-\\d+-\\d+\\s+" "" .TranslationBaseName }}"
+title: "{{ replaceRE "^\\d+-\\d+-\\d+\\s+" "" .Name }}"
 categories:
   -
 tags:
