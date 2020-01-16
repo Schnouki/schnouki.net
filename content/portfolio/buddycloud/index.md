@@ -49,7 +49,7 @@ purposes. I learned a lot while working on Buddycloud, and I'm very grateful to 
 support.
 
 I worked on Buddycloud on my free time as a volunteer, and I only stopped because I had not enough free time left after
-I joined [Findspire]({{< relref "findspire/index.md" >}}).
+I joined [Findspire]({{< relref "/portfolio/findspire/index.md" >}}).
 
 Fun fact: I won a Buddycloud T-shirt at [FOSDEM][] in 2012! The challenge was to setup a working Buddycloud instance and
 get in touch with the team… Had a really nice time with them at the XMPP "realtime booth". I still proudly wear that
