@@ -67,7 +67,7 @@ website generator (used on this blog).
   push notifications.
 - [django-weasyprint][]: Django class-based view generating PDF resposes using WeasyPrint. Added a feature that makes it
   faster and safer when building PDFs that should only use local images, stylesheets and fonts.
-- (plus all my contributions to [Buddycloud]({{< relref "buddycloud" >}}).)
+- (plus all my contributions to [Buddycloud]({{< relref "../buddycloud/index.md" >}}).)
 
 
 ## Other contributions
