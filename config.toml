@@ -29,6 +29,17 @@ ignoreFiles = ["/\\.#.+", "~$"]
 [markup.goldmark.renderer]
 unsafe = true
 
+# Privacy stuff -- https://gohugo.io/about/hugo-and-gdpr/
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
 [languages]
 # edit this block for your own language
 
